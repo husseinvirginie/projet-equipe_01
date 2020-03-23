@@ -13,12 +13,13 @@
     </header>
     <main>
         <section>
-            <p>CECI EST UNE TEST</p>
+            <p>CECI EST UN TEST</p>
         </section>
     </main>
     <footer>
         <p>Tous droits réservés 2020</p>
     </footer>
+    <script src="assets/js/app.js"></script>
     
 </body>
 </html>
