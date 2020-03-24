@@ -9,15 +9,15 @@
 </head>
 <body>
     <header>
-        <h1>BIENVENUE LES 5 FANTASTIQUES</h1>
+       
     </header>
     <main>
         <section>
-            <p>CECI EST UN TEST</p>
+         
         </section>
     </main>
     <footer>
-        <p>Tous droits réservés 2020</p>
+ 
     </footer>
     <script src="assets/js/app.js"></script>
     
