@@ -18,7 +18,7 @@ Le Projet des 5 Fantastiques
 
  5. > UPDATE : Pour MODIFIER une destination dans la table "destinations" de la Base SQL
 
- 6. > DELETE : Pour EFFACER une destination dans la table "destinations" de la Base SQL
+ 6.> DELETE : Pour EFFACER une destination dans la table "destinations" de la Base SQL
  
 NOM DE LA BASE DE DONNEES :      ilesfantastiques
    NOM DE LA TABLE:      destinations
