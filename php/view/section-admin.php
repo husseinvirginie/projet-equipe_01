@@ -15,7 +15,7 @@
         <input type="text" name="categorie" required placeholder="categorie">
         <input type="text" name="saison" required placeholder="saison">
         <textarea name="description" cols="60" rows="8" required placeholder=" description"></textarea>
-        <input type="decimal" name="prix" required placeholder="prix">
+        <input type="decimal" name="prix" required placeholder="prix"><!-- tu es sur de type="decimal"-->
 
         <input type="hidden" name="identifiantFormulaire" value="create">
 
@@ -35,16 +35,16 @@
 </section>
 
 <section>
-    <h2> Modifier la destination</h2>
+    <h2> Modifier la publication</h2>
     <form method="post" class="admin" id="update" action="">
         <div class="Update">
-            <input type="text" name="image" required value="assets/img/photo1.jpg">
+            <input type="text" name="image" required value="">
             <input type="text" name="lieu" required placeholder="lieu">
             <input type="text" name="pays" required placeholder="pays">
             <input type="text" name="categorie" required placeholder="categorie">
             <input type="text" name="saison" required placeholder="saison">
             <textarea name="description" cols="60" rows="8" required placeholder=" description"></textarea>
-            <input type="decimal" name="prix" required placeholder="prix"><!-- tu es sur de type="decimal"-->
+            <input type="decimal" name="prix" required placeholder="prix">
             <input type="text" name="id" required placeholder="entrez l'id">
         </div>
 
