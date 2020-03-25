@@ -1,11 +1,12 @@
 # projet-equipe_01
+
 Le Projet des 5 Fantastiques
  
  Les etapes :
 
  1. Faire les pages (HTML, PHP et CSS)
 
- 2. Créer la base SQL "projet-equipe-d" (ou si vous avez un autre nom plus clair ou plus simple c'est comme vous voulez) avec la table "destinations"
+ 2. Créer la base SQL " ilesdestinations " avec la table " destinations "
 
 -- Faire la page Accueil
  
