@@ -1,6 +1,7 @@
 # projet-equipe_01
 Le Projet des 5 Fantastiques
- les etapes
+ Les etapes :
+
  1. Faire les pages (HTML, PHP et CSS)
 
  2. Créer la base SQL "projet-equipe-d" (ou si vous avez un autre nom plus clair ou plus simple c'est comme vous voulez) avec la table "destinations"
@@ -13,7 +14,7 @@ Le Projet des 5 Fantastiques
  5. > UPDATE : Pour MODIFIER une destination dans la table "destinations" de la Base SQL
  6. > DELETE : Pour EFFACER une destination dans la table "destinations" de la Base SQL
  
-NOM DE LA BASE DE DONNEES :      iles-fantastiques
+NOM DE LA BASE DE DONNEES :      ilesfantastiques
    NOM DE LA TABLE:      destinations
  
 - id                               int              index=primary            auto_increment
@@ -23,4 +24,5 @@ NOM DE LA BASE DE DONNEES :      iles-fantastiques
 - categorie                                         varchar(160)
 - saison                                            varchar(160)
 - description                                       text
-- prix                                              varchar(160)
+- prix                                              decimal (10,2)
+
