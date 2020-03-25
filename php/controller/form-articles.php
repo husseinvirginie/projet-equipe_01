@@ -1,7 +1,63 @@
 <?php
+
+function filtrer($name="id")
+{
+    $resultat=$_REQUEST[$name]??"";
+    return $resultat;
+}
+
+$identifiantFormulaire = filtrer("identifiantFormulaire");
+
+if($identifiantFormulaire =="update"){
+    $tabAssoColonneValeur = [
+        "id"            => filtrer("id"),
+        "image"         => filtrer("image"),
+        "description"   => filtrer("description"),
+        "lieu"          => filtrer("lieu"),
+        "pays"          => filtrer("pays"),
+        "categorie"     => filtrer("categorie"),
+        "saison"        => filtrer("saison"),
+        "prix"          => filtrer("prix"),
+    ];
+    extract($tabAssoColonneValeur);
+
+    if(
+        $id          !=""
+     && $image       !=""
+     && $description !=""
+     && $lieu        !=""
+     && $pays        !=""
+     && $categorie   !=""
+     && $saison      !=""
+     && $prix        !=""
+    ){
+        $requeteSQL =
+<<<CODESQL
+UPDATE destinations
+SET
+        image=:image,
+        description=:description,
+        lieu=:lieu,
+        pays=:pays,
+        categorie=:categorie,
+        saison=:saison,
+        prix=:prix
+WHERE 
+id=:id;
+
+CODESQL;
+
+        require_once "php/model/envoyer-sql.php";
+
+        echo "La destination est modifiée";
+    }
+    
+}
+
+
 if ($identifiantFormulaire == "create")
 {
-    // CODE DE TRAITEMENT DU FORMULAIRE DE CREATE
+    // CODE DE TRAITEMENT DU FORMULAIRE DE CREATE,
 
     // DEBUG
     // echo "JE DOIS TRAITER LE FORMULAIRE";
@@ -34,6 +90,7 @@ if ($identifiantFormulaire == "create")
 
 
     $tabAssoColonneValeur = [
+        
         "image"            => filtrer("image"),
         "description"      => filtrer("description"),
         "lieu"             => filtrer("lieu"),
