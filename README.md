@@ -23,4 +23,4 @@ NOM DE LA BASE DE DONNEES :      iles-fantastiques
 - categorie                                         varchar(160)
 - saison                                            varchar(160)
 - description                                       text
-- prix                                              varchar(160)
+- prix                                              decimal(10,0)

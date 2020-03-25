@@ -1,3 +1,13 @@
 h1 {
     color:red;text-align: center;
 }
+form .infosUpdate {
+    display:flex;
+    width:100%;
+    flex-direction: column;
+}
+
+.infosUpdate > * {
+    margin:0.25rem;
+    padding:0.25rem;
+}
