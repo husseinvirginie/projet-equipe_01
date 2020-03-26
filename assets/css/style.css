@@ -149,7 +149,7 @@ h6 {
 }
 
 .destination p {
-    color: #666666s;
+    color: #666666;
     margin-bottom: 35px;
 }
 
@@ -264,4 +264,17 @@ footer .mail {
 
 footer .mail:hover{
     color: #003644;
+}
+
+/* -------------------------------- */
+
+form .infosUpdate {
+    display:flex;
+    width:100%;
+    flex-direction: column;
+}
+
+.infosUpdate > * {
+    margin:0.25rem;
+    padding:0.25rem;
 }
