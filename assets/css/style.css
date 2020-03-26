@@ -1,3 +1,267 @@
-h1 {
-    color:red;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666666;
+}
+
+.nav-container {
+    background-color: #0081A2;  
+    background-image: linear-gradient(90deg, #00DEF2, #0081A2);
+    width: 100%;
+    height: 100px;
+    padding: 40px 50px 0px 50px;
+    text-align: right;
+    position: fixed;
+}
+
+.nav-container a{
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 15px;
+    margin-left: 0px;
+    text-decoration: none;
+}
+
+.nav-container a:hover {
+    color: #003644;
+}
+
+.nav-container .separateur {
+    font-size: 18px;
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+.brand-logo {
+    margin-top: -17px;
+    display: block;
+    float: left;
+}
+
+.subpage-header{
+    background-color: #FFFFFF;
+    background-image: url("../img/seaside-994605.jpg");
+    margin-top: 0px;
+    height: 571px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+    padding-left: 30%;
+    /* Pour faire en Parallaxe */
+    /* background-attachment: fixed; */
+}
+
+.subpage-header h1 {
+    color: #162F37;
+    font-size: 70px;
+    padding-top: 155px;
+    margin: 0px;
+}
+
+.subpage-header p {
+    color: #505D79;
+    font-size: 23px;
+    line-height: 28px;
+    width: 540px; 
+}
+
+main {
+    padding: 40px 50px 50px 50px;
+}
+
+h2 {
+    color: #FD2C84;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0px 0px 30px 0px;
+}
+
+h3 {
+    color: #006D8C;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: -14px;
+}
+
+h4 {
+    color: #00ABBB;
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: -14px;
+}
+
+h5 {
+    color: #9A784E;
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: -27px;
+}
+
+h6 {
+    color: #666666;
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 18px;
+}
+
+.prix {
+    color: #006D8C;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 0px;
+}
+
+.listeDestination {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.listeDestination .destination{
+    width: calc(100% / 3 - 80px);
+    margin-right: 80px;
+    /* POUR CHOISIR L'ORDRE D'AFFICHAGE DES ELEMENTS */
+    order: 10;
+}
+    
+.destination.pension {
+    /* EXCEPTION : J'OUTREPASSE L'ORDRE DE LA REQUETE ET JE METS LES ARTICLES CATEGORIE pension
+    EN PRIORITAIRE DANS L'ORDRE D'AFFICHAGE */
+    order: 1;
+    /* ET JE PEUX L'AGGRANDIR */
+    /* width: 60%; */
+}
+
+.destination img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.destination p {
+    color: #666666s;
+    margin-bottom: 35px;
+}
+
+.destination .bouton {
+    color: #FFFFFF;
+    font-size: 22px;
+    line-height: 22px;
+    text-align: center;
+    text-decoration: none;
+    width: 200px;
+    background-color: #FD2C84;
+    padding: 14px 20px;
+    border-radius: 8px;
+    display: inline-block;
+    float: right;
+    margin-top: -36px;
+}
+
+.destination .bouton:hover {
+    background-color: #CA1C65;
+    background-image: linear-gradient(0deg, #FD2C84, #C1135C);
+}
+
+form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+/* POUR SELECTIONNER TOUTES LES BALISES ENFANTS DIRECTS DE LA BALISE PARENTE FORM */
+form > * {
+    margin: 5px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #333;
+    border-radius: 5px;
+}
+
+.big-button {
+    margin: 15px 0px;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #4c4c4c;
+    border-radius: 8px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.big-button:hover {
+    background-color: #666666;
+}
+
+footer {
+    color: #FFFFFF;
+    font-size: 16px;
+    background-color: #0081A2;  
+    background-image: linear-gradient(90deg, #0081A2, #00DEF2);
+    width: 100%;
+    padding: 50px 50px 40px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    /* sticky footer */
+    /* position: fixed;
+    left: 0;
+    bottom: 0; */
+}
+
+footer .bloc {
+    width: calc(100% / 2 - 0px);
+    margin-right: 0px;
+}
+
+footer h1 {
+    color: #003644;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 22px;
+}
+
+footer a {
+    color: #003644;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: -15px;
+    margin-bottom: 22px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #FFFFFF;
+}
+
+footer .separateur {
+    font-size: 18px;
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+footer .mail {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+footer .mail:hover{
+    color: #003644;
 }
