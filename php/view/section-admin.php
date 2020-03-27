@@ -1,13 +1,15 @@
 
 <section>
-    <!-- image varchar(160)
-    - lieu varchar(160)
-    - pays varchar(160)
-    - categorie varchar(160)
-    - saison varchar(160)
-    - description text
-    - prix decimal(10,0)-->
-    <h3>welcom man</h3>
+    <!-- 
+    - image         varchar(160)
+    - lieu          varchar(160)
+    - pays          varchar(160)
+    - categorie     varchar(160)
+    - saison        varchar(160)
+    - description   text
+    - prix          decimal(10,2)
+    -->
+    <h2>Admin</h2>
 
     <form id="create" class="admin" action="" method="POST">
         <input type="text" name="image" required value="assets/img/photo1.jpg">
@@ -63,4 +65,3 @@
 
     </form>
 </section>
->>>>>>> 93bbeca3ee1ab77cf6c1c0c60671261cc0d9967d
