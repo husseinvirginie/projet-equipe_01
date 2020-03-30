@@ -104,9 +104,8 @@ if ($identifiantFormulaire == "create")
 
     // IL FAUT RAJOUTER DE LA SECURITE
     // POUR VALIDER QUE TOUTES LES INFOS NECESSAIRES SONT PRESENTES
-    if ($titre != "" 
+    if ($image != "" 
             && $description != ""
-            && $image != ""
             && $lieu != ""
             && $pays != ""
             && $categorie != ""
