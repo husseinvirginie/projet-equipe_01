@@ -22,7 +22,7 @@
 
         <input type="hidden" name="identifiantFormulaire" value="create">
 
-        <button type="submit">Réservez</button>
+        <button type="submit">valider</button>
         <!-- POUR L'IMAGE, ON DEVRAIT PROPOSER UN UPLOAD => PLUS TARD... -->
 
 
