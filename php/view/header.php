@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Les Iles Fantastiques</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    
 </head>
 <body>
 
