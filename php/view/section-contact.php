@@ -1,21 +1,68 @@
 
-        <section>
+        <section class="contact">
             <h2>Contact (COMING SOON)</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Repellat minus excepturi sed dolor, id quaerat. Recusand
                 ae doloribus esse maiores non pariatur provident
                  voluptatem voluptates, totam eaque, iure nemo alias soluta!</p>
 
+<form action="" method="POST" > 
 
-                 <div id="contact">
-    <h3>Contact</h3>
-    <p></p>
-    <for>
-      <input class="" type="text" placeholder="nom" required name="name"><br>
-      <input class="" type="text" placeholder="Email" required name="email"><br>
-      <input class="" type="text" placeholder="Sujet" required name="sujet"><br>
-      <input class="" type="text" placeholder="Commentaire" required name="Commentaire"><br>
-      <button class="" type="submit">
-        <i class=""></i> SEND MESSAGE
-      </button>
+
+      <input type="text" placeholder="NOM"  required name="nom"><br>
+
+      <input  type="text" placeholder="PRENOM" required name="prenom"><br>
+
+      <input type="text" placeholder="ADRESSE" required name="adresse"><br>
+
+      <input type="text" placeholder="PAYS"   required name="pays"><br>
+
+      <input type="text" placeholder="Email"  required name="email"><br>
+
+      <textarea name="message" id="" cols="30" rows="10"></textarea>
+      <button type="submit">ENVOYER</button>
+      
+    
         </section>
+
+       
+          <?php
+
+        function filter($name){
+
+            $resultat=$_REQUEST[$name];
+           
+          
+
+
+            return $resultat;
+
+        }
+
+        $informations=[
+
+          "nom"         =>filter("nom"),
+          "prenom"      =>filter("prenom"),
+          "adresse"     =>filter("adresse"),
+          "pays"        =>filter("pays"),
+          "email"       =>filter("email"),
+          "message"     =>filter("message")
+        ];
+       
+        
+extract($informations);
+
+
+if     
+($nom!=""
+&&$prenom!=""
+&&$adresse!=""
+&&$pays!=""
+&&$email!=""
+&&$message!=""){
+
+}
+    
+
+
+      
