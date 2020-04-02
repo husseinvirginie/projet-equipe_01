@@ -1,18 +1,18 @@
 # projet-equipe_01
 
-Le Projet des 5 Fantastiques
+<b>Le Projet des 5 Fantastiques</b>
  
- Les Etapes :
+ <b>Les Etapes :</b>
 
    1. Faire les pages (HTML, PHP et CSS)
 
    2. Créer la base SQL " ilesdestinations " avec la table " destinations "
 
----- Faire la page accueil 
+---- <b>Faire la page accueil</b> 
  
    3. READ : Pour AFFICHER toutes les destinations de la table "destinations" de la Base SQL
 
----- Faire la page admin
+---- <b>Faire la page admin</b>
 
    4. CREATE : Pour CREER une destination dans la table "destinations" de la Base SQL
 
@@ -23,12 +23,12 @@ Le Projet des 5 Fantastiques
 NOM DE LA BASE DE DONNEES : ilesfantastiques <br>
 NOM DE LA TABLE: destinations
  
-- id                   int              index=primary            auto_increment
-- image                varchar(160)
-- lieu                 varchar(160) 
-- pays                 varchar(160)
-- categorie            varchar(160)
-- saison               varchar(160)
-- description          text
-- prix                 decimal(10,2)
+- id : int + index = primary +auto_increment
+- image : varchar(160)
+- lieu : varchar(160) 
+- pays : varchar(160)
+- categorie : varchar(160)
+- saison : varchar(160)
+- description : text
+- prix : decimal(10,2)
 
