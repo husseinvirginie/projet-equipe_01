@@ -20,15 +20,15 @@ Le Projet des 5 Fantastiques
 
    6. DELETE : Pour EFFACER une destination dans la table "destinations" de la Base SQL
  
-NOM DE LA BASE DE DONNEES : ilesfantastiques
+NOM DE LA BASE DE DONNEES : ilesfantastiques <br>
 NOM DE LA TABLE: destinations
  
-- id                               int              index=primary            auto_increment
-- image                                             varchar(160)
-- lieu                                              varchar(160) 
-- pays                                              varchar(160)
-- categorie                                         varchar(160)
-- saison                                            varchar(160)
-- description                                       text
-- prix                                              decimal(10,2)
+- id                   int              index=primary            auto_increment
+- image                varchar(160)
+- lieu                 varchar(160) 
+- pays                 varchar(160)
+- categorie            varchar(160)
+- saison               varchar(160)
+- description          text
+- prix                 decimal(10,2)
 
