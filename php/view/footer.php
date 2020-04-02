@@ -3,7 +3,7 @@
     <footer>
         <div class="bloc">
             <a href="admin.php">Admin</a>
-            <p>Tous droits réservés Les 5 Fantastiques 2020</p>
+            <p>Tous droits réservés Les 5 Fantastiques 2020&copy</p>
         </div>
 
         <div class="bloc">
