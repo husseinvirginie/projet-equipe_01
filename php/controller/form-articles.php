@@ -1,14 +1,17 @@
 <?php
+//On créer une fonction pour filtrer les information
 
 function filtrer($name="id")
 {
     $resultat=$_REQUEST[$name]??"";
     return $resultat;
 }
-
 $identifiantFormulaire = filtrer("identifiantFormulaire");
 
+// identifiant formualaire
+
 if($identifiantFormulaire =="update"){
+// On récupère les informations envoyées par le naviguateur.
     $tabAssoColonneValeur = [
         "id"            => filtrer("id"),
         "image"         => filtrer("image"),
@@ -19,8 +22,10 @@ if($identifiantFormulaire =="update"){
         "saison"        => filtrer("saison"),
         "prix"          => filtrer("prix"),
     ];
-    extract($tabAssoColonneValeur);
 
+    // On utilise ce raccourci pour pour créer les variables à partir du tableau.
+    extract($tabAssoColonneValeur);
+// On vérifie les valeurs
     if(
         $id          !=""
      && $image       !=""
@@ -46,7 +51,7 @@ WHERE
 id=:id;
 
 CODESQL;
-
+// on envoye la requete 
         require_once "php/model/envoyer-sql.php";
 
         echo "La destination est modifiée";
