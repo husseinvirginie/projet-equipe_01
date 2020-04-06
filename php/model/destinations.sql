@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mar. 31 mars 2020 à 17:24
+-- Généré le : lun. 06 avr. 2020 à 14:42
 -- Version du serveur :  10.4.11-MariaDB
 -- Version de PHP : 7.4.1
 
@@ -44,7 +44,7 @@ CREATE TABLE `destinations` (
 --
 
 INSERT INTO `destinations` (`id`, `image`, `lieu`, `pays`, `categorie`, `saison`, `description`, `prix`) VALUES
-(1, 'assets/img/photo1.jpg', 'MARSEILLE', 'france ', 'voyage', 'été ', 'vive les iles', '200.00'),
+(1, ' assets/img/brown-on-seashore-near-mountain-1007657.jpg', 'MARSEILLE', 'france ', 'voyage', 'été ', 'vive les îles!!', '200.00'),
 (3, 'assets/img/two-corona-extra-and-san-mig-light-beers-on-top-of-brown-767239.jpg', 'Grand Cayman', 'îles Caïmans', 'demi pension', 'été', '\r\nMalgré sa taille, ce pays est réputé pour ses incroyables plages. La plage « Seven Mile Beach » est le joyau de ces îles de rêve : c’est une immense plage de sable fin qui surplombe les eaux chaudes et cristallines de la mer des Caraïbes… \r\n\r\n', '857.00'),
 (4, 'assets/img/man-and-woman-standing-on-deck-1287441.jpg', 'Pico de las Nieves ile de Grande Canarie', 'Espagne', 'pension complète', 'été ', 'Le Pico de las Nieves attire les visiteurs aventureux qui souhaitent découvrir le côté campagne de l\'île. Réservez une visite guidée de Las Palmas, afin de profiter de la vue panoramique du terrain.', '396.00'),
 (5, 'assets/img/light-sea-dawn-landscape-33545.jpg', 'Les îles Fidji', 'Fidji', 'pension complète', 'été ', 'Les îles Fidji sont très appréciées. En effet, cet archipel est composé de plus de 300 îles, permettant à chacun de profiter au mieux de cette destination paradisiaque. Les îles Yasawa, situées au large de l’île Viti Levu, abritent un nombre incroyable de plages surplombées par des collines recouvertes de végétation tropicale luxuriante.', '1450.00'),
