@@ -12,7 +12,7 @@
     <h2>Admin</h2>
 
     <form id="create" class="admin" action="" method="POST">
-        <input type="text" name="image" required value="assets/img/photo1.jpg">
+        <input type="text" name="image" required value="assets/img/">
         <input type="text" name="lieu" required placeholder="lieu">
         <input type="text" name="pays" required placeholder="pays">
         <input type="text" name="categorie" required placeholder="categorie">
@@ -41,7 +41,7 @@
     <h2> Modifier la publication</h2>
     <form method="post" class="admin" id="update" action="">
         <div class="Update">
-            <input type="text" name="image" required value="imagae">
+            <input type="text" name="image" required value="image">
             <input type="text" name="lieu" required placeholder="lieu">
             <input type="text" name="pays" required placeholder="pays">
             <input type="text" name="categorie" required placeholder="categorie">
