@@ -9,7 +9,8 @@
     - description   text
     - prix          decimal(10,2)
     -->
-    <h2>Admin</h2>
+    <h1>admin</h1>
+    <h2> creer la publication</h2>
 
     <form id="create" class="admin" action="" method="POST">
         <input type="text" name="image" required value="assets/img/">
@@ -39,8 +40,10 @@
 
 <section>
     <h2> Modifier la publication</h2>
-    <form method="post" class="admin" id="update" action="">
-        <div class="Update">
+    
+
+    <form id="update" class="admin" action="" method="post">
+      
             <input type="text" name="image" required value="image">
             <input type="text" name="lieu" required placeholder="lieu">
             <input type="text" name="pays" required placeholder="pays">
@@ -49,7 +52,7 @@
             <textarea name="description" cols="60" rows="8" required placeholder=" description"></textarea>
             <input type="decimal" name="prix" required placeholder="prix">
             <input type="text" name="id" required placeholder="entrez l'id">
-        </div>
+     
 
         <input type="hidden" name="identifiantFormulaire" value="update">
         <button type="submit"> Modifier </button>
