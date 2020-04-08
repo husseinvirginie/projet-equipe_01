@@ -1,6 +1,6 @@
 
         <section>
-            <h2>Nos Exclusivités Voyages </h2>
+            <h2>Nos Exclusivités Voyages</h2>
             <div class="listeDestination">
             <?php
             
@@ -60,7 +60,7 @@
                                 <h6>$saison</h6>
                                 <p>$description</p>
                                 <div class="prix">$prix €</div>
-                                <a href="#" class="bouton">Réservez</a> 
+                                <a href="#" class="bouton">Réserver</a> 
                             </div>
             CODEHTML;
             }
