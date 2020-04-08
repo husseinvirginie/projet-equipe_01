@@ -72,10 +72,9 @@
 
 <h2>Supprimer la publication</h2>
 
-<form method="post" class="admin" id="delete" action="">
+<form method="post" id="delete" action="">
 
-
-
+<input type="id" name="id" required placeholder = " Entrez l'id">
 <input type="text" name="image" required value = "image">
 <input type="text" name="lieu" required value = "lieu">
 <input type="text" name="pays" required value = "pays">
@@ -87,7 +86,7 @@
 <input type="hidden" name="identifiantFormulaire" value="delete">
 <Button type ="submit">supprimer</button>
 
-Debug console.log «Etes vous sur de vouloir supprimer ce fichier »
+
         <div class="confirmation">
         <?php
 $identifiantFormulaire = $_REQUEST["identifiantFormulaire"]??"";
