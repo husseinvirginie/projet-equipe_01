@@ -39,16 +39,9 @@
 
 <section>
     <h2> Modifier la publication</h2>
-<<<<<<< HEAD
 
     <form method="post" class="admin" id="update" action="">
         <div class="Update">
-=======
-    
-
-    <form id="update" class="admin" action="" method="post">
-      
->>>>>>> 8a52407592e1dbdb7a21567255a6c0235fdb9645
             <input type="text" name="image" required value="image">
             <input type="text" name="lieu" required placeholder="lieu">
             <input type="text" name="pays" required placeholder="pays">
@@ -99,7 +92,8 @@ Debug console.log «Etes vous sur de vouloir supprimer ce fichier »
         <?php
 $identifiantFormulaire = $_REQUEST["identifiantFormulaire"]??"";
 If ($identifiantFormulaire=="delete"){
-{Require "php/controller/form_articles.php";}
+Require "php/controller/form_articles.php";
+}
 
     ?>
 </div>
