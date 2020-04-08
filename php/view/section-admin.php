@@ -40,18 +40,8 @@
 <section>
     <h2> Modifier la publication</h2>
 
-<<<<<<< HEAD
-
     <form method="post" class="admin" id="update" action="">
-        <div class="Update">
-
-=======
-
-
-    <form method="post" class="admin" id="update" action="">
-      
-    
->>>>>>> 2a9734a3b733ffb7461cf71c71b77f6b24b4060c
+        
 
     <form id="update" class="admin" action="" method="post">
       
@@ -81,7 +71,7 @@
                 require "php/controller/form-articles.php";
             }
             ?>
-        </div>
+      
 
     </form>
 </section>
@@ -95,7 +85,7 @@
 <form method="post" class="admin" id="delete" action="">
 
 
-    <div class="delete">
+   
 
 
 <input type="id" name="id" required placeholder = " Entrez l'id">
@@ -116,14 +106,10 @@
 $identifiantFormulaire = $_REQUEST["identifiantFormulaire"]??"";
 If ($identifiantFormulaire=="delete"){
 
-<<<<<<< HEAD
+
 
 Require "php/controller/form-articles.php";
-=======
-Require "php/controller/form_articles.php";
 
-
->>>>>>> 2a9734a3b733ffb7461cf71c71b77f6b24b4060c
 }
 
 
