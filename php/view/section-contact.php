@@ -15,21 +15,27 @@
 
       <input type="text" placeholder="ADRESSE" required name="adresse"><br>
 
-      <input type="text" placeholder="PAYS"   required name="pays"><br>
+      
+        <select id="country" required name="pays" placeholder="PAYS">
+      <option value="">PAYS</option>
+      <option value="CANADA">CANADA</option>
+      <option value="FRANCE">FRANCE</option>
+      <option value="AFRIQUE">AFRIQUE</option>
+      <option value="ASIE">ASIE</option>
+      <option value="USA">USA</option>
+    </select>
 
       <input type="text" placeholder="Email"  required name="email"><br>
 
-      <textarea name="message" id="" cols="30" rows="10"></textarea>
-      <button type="submit">ENVOYER</button>
-      
-</form>
-        </section>
+      <textarea name="message" id=""  placeholder="MESSAGES" cols="30" rows="10"></textarea>
 
-       
-          <?php
+
+      <button type="submit" class="btn">ENVOYER</button>
+      
+        <div>
 
         
-
+<?php
   
         function filter($name){
 
@@ -86,17 +92,12 @@ require_once "php/model/envoyer-sql.php";
      echo "MERCI  $requeteSQL";
 }
 
-else
 
-{
-  echo "VEUILLEZ REMPLIR TOUS LES CHAMPS OBLIGATOIRES";
+    
+?>
+</div>
 
-
-}
-
-
-
-
-
+</form>
+        </section>
 
       
