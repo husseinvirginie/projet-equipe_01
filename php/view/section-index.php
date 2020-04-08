@@ -1,6 +1,6 @@
 
         <section>
-            <h2>Nos Exclusivités Voyages</h2>
+            <h2>Nos Exclusivités Voyages </h2>
             <div class="listeDestination">
             <?php
             

@@ -2,8 +2,8 @@
 -- version 5.0.1
 -- https://www.phpmyadmin.net/
 --
--- Hôte : localhost
--- Généré le : mer. 08 avr. 2020 à 10:25
+-- Hôte : 127.0.0.1
+-- Généré le : lun. 06 avr. 2020 à 14:42
 -- Version du serveur :  10.4.11-MariaDB
 -- Version de PHP : 7.4.1
 

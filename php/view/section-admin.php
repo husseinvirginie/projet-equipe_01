@@ -9,10 +9,11 @@
     - description   text
     - prix          decimal(10,2)
     -->
-    <h2>Admin</h2>
+    <h1>admin</h1>
+    <h2> creer la publication</h2>
 
     <form id="create" class="admin" action="" method="POST">
-        <input type="text" name="image" required value="assets/img/photo1.jpg">
+        <input type="text" name="image" required value="assets/img/">
         <input type="text" name="lieu" required placeholder="lieu">
         <input type="text" name="pays" required placeholder="pays">
         <input type="text" name="categorie" required placeholder="categorie">
@@ -25,12 +26,11 @@
         <button type="submit">valider</button>
         <!-- POUR L'IMAGE, ON DEVRAIT PROPOSER UN UPLOAD => PLUS TARD... -->
 
-
         <div class="confirmation">
             <?php
-            $identifiantFormulaire = $_REQUEST["identifiantFormulaire"] ?? "";
-            if ($identifiantFormulaire == "create") {
-                require "php/controller/form-articles.php";
+            $identifiantFormulaire=$_REQUEST["identifiantFormulaire"]??"";
+            if($identifiantFormulaire=="create"){
+            require "php/controller/form-articles.php";
             }
             ?>
         </div>
@@ -39,17 +39,25 @@
 
 <section>
     <h2> Modifier la publication</h2>
+<<<<<<< HEAD
+
     <form method="post" class="admin" id="update" action="">
         <div class="Update">
-            <input type="text" name="image" required value="">
+=======
+    
+
+    <form id="update" class="admin" action="" method="post">
+      
+>>>>>>> 8a52407592e1dbdb7a21567255a6c0235fdb9645
+            <input type="text" name="image" required value="image">
             <input type="text" name="lieu" required placeholder="lieu">
             <input type="text" name="pays" required placeholder="pays">
             <input type="text" name="categorie" required placeholder="categorie">
             <input type="text" name="saison" required placeholder="saison">
-            <textarea name="description" cols="60" rows="8" required placeholder=" description"></textarea>
+            <textarea name="description" cols="60" rows="8" required placeholder="description"></textarea>
             <input type="decimal" name="prix" required placeholder="prix">
             <input type="text" name="id" required placeholder="entrez l'id">
-        </div>
+     
 
         <input type="hidden" name="identifiantFormulaire" value="update">
         <button type="submit"> Modifier </button>
@@ -58,10 +66,43 @@
         
             <?php
              $identifiantFormulaire=$_REQUEST["identifiantFormulaire"]??"";
-             if($identifiantFormulaire=="update")
-             {require "php/controller/form-articles.php";}
+             if($identifiantFormulaire=="update"){
+             require "php/controller/form-articles.php";
+            }
             ?>
         </div>
 
     </form>
+</section>
+
+<section>
+
+<h2>Supprimer la publication</h2>
+
+<form method="post" class="admin" id="delete" action="">
+
+    <div class="delete">
+
+<input type="text" name="image" required value = "image">
+<input type="text" name="lieu" required value = "lieu">
+<input type="text" name="pays" required value = "pays">
+<input type="text" name="categorie" required value = "catégorie">
+<input type="text" name="saison" required value = "saisons">
+<textarea name="description" cols="60" rows="8" required placeholder="description"></textarea>
+<input type="decimal" name="prix">
+
+<input type="hidden" name="identifiantFormulaire" value="delete">
+<Button type ="submit">supprimer</button>
+
+Debug console.log «Etes vous sur de vouloir supprimer ce fichier »
+        <div class="confirmation">
+        <?php
+$identifiantFormulaire = $_REQUEST["identifiantFormulaire"]??"";
+If ($identifiantFormulaire=="delete"){
+{Require "php/controller/form_articles.php";}
+
+    ?>
+</div>
+
+</form>
 </section>
