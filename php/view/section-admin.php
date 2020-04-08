@@ -40,8 +40,18 @@
 <section>
     <h2> Modifier la publication</h2>
 
+
+    <form method="post" class="admin" id="update" action="">
+        <div class="Update">
+
+
+    <form id="update" class="admin" action="" method="post">
+      
+
+
     <form method="post" class="admin" id="update" action="">
       
+
             <input type="text" name="image" required value="image">
             <input type="text" name="lieu" required placeholder="lieu">
             <input type="text" name="pays" required placeholder="pays">
@@ -72,7 +82,13 @@
 
 <h2>Supprimer la publication</h2>
 
-<form method="post" id="delete" action="">
+
+
+<form method="post" class="admin" id="delete" action="">
+
+
+    <div class="delete">
+
 
 <input type="id" name="id" required placeholder = " Entrez l'id">
 <input type="text" name="image" required value = "image">
@@ -91,8 +107,11 @@
         <?php
 $identifiantFormulaire = $_REQUEST["identifiantFormulaire"]??"";
 If ($identifiantFormulaire=="delete"){
+
+
 Require "php/controller/form-articles.php";
 }
+
 
     ?>
 </div>
