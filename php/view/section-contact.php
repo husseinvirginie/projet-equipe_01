@@ -22,24 +22,25 @@
       <textarea name="message" id="" cols="30" rows="10"></textarea>
       <button type="submit">ENVOYER</button>
       
-    
+</form>
         </section>
 
        
           <?php
 
+        
+
+  
         function filter($name){
 
-            $resultat=$_REQUEST[$name];
-           
-          
+            $resultat=$_REQUEST[$name]?? "";
 
 
             return $resultat;
 
         }
 
-        $informations=[
+        $tabAssoColonneValeur=[
 
           "nom"         =>filter("nom"),
           "prenom"      =>filter("prenom"),
@@ -50,7 +51,8 @@
         ];
        
         
-extract($informations);
+extract($tabAssoColonneValeur);
+
 
 
 if     
@@ -61,8 +63,40 @@ if
 &&$email!=""
 &&$message!=""){
 
-}
+
     
+$requeteSQL=
+
+<<<code
+
+INSERT INTO messages
+
+(nom,prenom,adresse,pays,email,message)
+
+VALUES
+
+(:nom,:prenom,:adresse,:pays,:email,:message)
+
+code;
+
+
+require_once "php/model/envoyer-sql.php";
+
+
+     echo "MERCI  $requeteSQL";
+}
+
+else
+
+{
+  echo "VEUILLEZ REMPLIR TOUS LES CHAMPS OBLIGATOIRES";
+
+
+}
+
+
+
+
 
 
       
