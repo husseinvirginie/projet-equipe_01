@@ -41,7 +41,7 @@
     <h2> Modifier la publication</h2>
 
     <form method="post" class="admin" id="update" action="">
-        <div class="Update">
+      
             <input type="text" name="image" required value="image">
             <input type="text" name="lieu" required placeholder="lieu">
             <input type="text" name="pays" required placeholder="pays">
@@ -74,7 +74,7 @@
 
 <form method="post" class="admin" id="delete" action="">
 
-    <div class="delete">
+
 
 <input type="text" name="image" required value = "image">
 <input type="text" name="lieu" required value = "lieu">
