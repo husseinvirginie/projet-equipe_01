@@ -92,7 +92,7 @@ Debug console.log «Etes vous sur de vouloir supprimer ce fichier »
         <?php
 $identifiantFormulaire = $_REQUEST["identifiantFormulaire"]??"";
 If ($identifiantFormulaire=="delete"){
-Require "php/controller/form_articles.php";
+Require "php/controller/form-articles.php";
 }
 
     ?>
