@@ -40,8 +40,19 @@
 <section>
     <h2> Modifier la publication</h2>
 
+
+
     <form method="post" class="admin" id="update" action="">
       
+    
+
+    <form id="update" class="admin" action="" method="post">
+      
+
+
+    <form method="post" class="admin" id="update" action="">
+      
+
             <input type="text" name="image" required value="image">
             <input type="text" name="lieu" required placeholder="lieu">
             <input type="text" name="pays" required placeholder="pays">
@@ -60,7 +71,7 @@
             <?php
              $identifiantFormulaire=$_REQUEST["identifiantFormulaire"]??"";
              if($identifiantFormulaire=="update"){
-             require "php/controller/form-articles.php";
+                require "php/controller/form-articles.php";
             }
             ?>
         </div>
@@ -73,6 +84,9 @@
 <h2>Supprimer la publication</h2>
 
 <form method="post" class="admin" id="delete" action="">
+
+
+ 
 
 
 
@@ -92,8 +106,12 @@ Debug console.log «Etes vous sur de vouloir supprimer ce fichier »
         <?php
 $identifiantFormulaire = $_REQUEST["identifiantFormulaire"]??"";
 If ($identifiantFormulaire=="delete"){
+
 Require "php/controller/form_articles.php";
+
+
 }
+
 
     ?>
 </div>

@@ -121,13 +121,13 @@ h6 {
 
 .listeDestination {
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .listeDestination .destination{
-    width: calc(100% / 3 - 80px);
-    margin-right: 80px;
+    width: calc(100% / 3 - 3%);
     /* POUR CHOISIR L'ORDRE D'AFFICHAGE DES ELEMENTS */
     order: 10;
 }
@@ -142,7 +142,7 @@ h6 {
 
 .destination img {
     width: 100%;
-    height: 270px;
+    /* height: 270px; */
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 5px;
@@ -163,14 +163,15 @@ h6 {
     background-color: #FD2C84;
     padding: 14px 20px;
     border-radius: 8px;
-    display: inline-block;
     float: right;
     margin-top: -36px;
+    margin-bottom: 40px;
 }
 
 .destination .bouton:hover {
-    background-color: #CA1C65;
-    background-image: linear-gradient(0deg, #FD2C84, #C1135C);
+    /* background-color: #CA1C65;
+    background-image: linear-gradient(0deg, #FD2C84, #C1135C); */
+    box-shadow: 0 1px 2px 0 rgba(253,44,132,0.451), 0 1px 3px 1px rgba(253,44,132,0.302);
 }
 
 form {
