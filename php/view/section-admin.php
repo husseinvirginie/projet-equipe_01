@@ -8,7 +8,7 @@
     - description   text
     - prix          decimal(10,2)
     -->
-    <h2>Admin</h2>
+    <h2>admin</h2>
     <h3 class="soustitre-admin">Créer la Destination</h3>
 
     <form id="create" class="admin" action="" method="POST">
@@ -26,7 +26,7 @@
 
         <div class="confirmation">
             <?php
-            $identifiantFormulaire=$_REQUEST["identifiantFormulaire"]??"";
+            $identifiantFormulaire = $_REQUEST["identifiantFormulaire"] ?? "";
             if($identifiantFormulaire=="create"){
             require "php/controller/form-articles.php";
             }
@@ -37,18 +37,9 @@
 
 <section>
     <h3 class="soustitre-admin">Modifier la Destination</h3>
-
-
-
-    <form method="post" class="admin" id="update" action="">
-    
     
     <form id="update" class="admin" action="" method="post">
-    
-
-    <form method="post" class="admin" id="update" action="">
         
-
         <input type="text" name="image" required value="image">
         <input type="text" name="lieu" required placeholder="lieu">
         <input type="text" name="pays" required placeholder="pays">
@@ -79,6 +70,7 @@
 
     <form method="post" class="admin" id="delete" action="">
 
+        <input type="text" name="id" required placeholder="entrez l'id">
         <input type="text" name="image" required value = "image">
         <input type="text" name="lieu" required value = "lieu">
         <input type="text" name="pays" required value = "pays">
@@ -95,7 +87,7 @@
             <?php
             $identifiantFormulaire = $_REQUEST["identifiantFormulaire"]??"";
             If ($identifiantFormulaire=="delete"){
-                require "php/controller/form_articles.php";
+                require "php/controller/form-articles.php";
             }
             ?>
         </div>

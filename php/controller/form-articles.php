@@ -3,7 +3,7 @@
 
 function filtrer($name="id")
 {
-    $resultat=$_REQUEST[$name]??"";
+    $resultat=$_REQUEST[$name] ?? "";
     return $resultat;
 }
 $identifiantFormulaire = filtrer("identifiantFormulaire");
