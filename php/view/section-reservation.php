@@ -1,96 +1,144 @@
-<section class="Réservation">
-            <h2>Réservation</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Repellat minus excepturi sed dolor, id quaerat. Recusand
-                ae doloribus esse maiores non pariatur provident
-                 voluptatem voluptates, totam eaque, iure nemo alias soluta!</p>
-
-<form action="" method="POST" > 
 
 
-      <input type="text" placeholder="NOM"  required name="nom"><br>
 
-      <input  type="text" placeholder="PRENOM" required name="prenom"><br>
 
-      <input  type="text" placeholder="age" required name="age"><br>
 
-      <input  type="text" placeholder="visa numero" required name="visa"><br>
 
-      <input type="text" placeholder="ADRESSE" required name="adresse"><br>
 
-      <input type="text" placeholder="Email"  required name="email"><br>
 
-      <input type="text" placeholder="telephon"   required name="telephon"><br>
+<section class="reservation">
 
-      <textarea name="note" id="" cols="30" rows="10" required placeholder=" NOTES"></textarea>
-      <button type="submit">ENVOYER</button>
-      
-</form>
-        </section>
+<form method="POST" action="">
 
-       
-          <?php
+<label><i class="fa fa-plane" style="font-size:24px"></i>Destination*</label>
 
-        
+<input type="text" id="" required name="destination" placeholder="FRANCE">
+
+
+<label><i class="fa fa-calendar" style="font-size:24px"></i> Date de depart*</label>
+
+
+<input type="text" id="" required name="date" placeholder="2000-02-23">
+ 
+<label>Durée*</label>
+
+<input type="text"  required name="duree" placeholder="">
+
+<label> <i class="fa fa-institution"></i>ville de départ*</label>
+
+<input type="text" required name="ville" placeholder="NEW YORK">
+
+<label><i class="fa fa-user"></i>Nombre d'adulte*</label> 
+<input type="number" required name="adulte">
+
+<label><i class="fa fa-user"></i>Nombre d'enfant*</label>
+
+<input type="number" required name="enfant">
+
+
+
+<label>PAYMENT</label>
+ <label>LE NOM SUR LA CARTE<div class="payment">
+  <i class="fa fa-cc-visa" style="color:navy;"></i>
+  <i class="fa fa-cc-amex" style="color:blue;"></i>
+  <i class="fa fa-cc-mastercard" style="color:red;"></i>
+  <i class="fa fa-cc-discover" style="color:orange;"></i>
+</div>
+
+</label>
+
+<input type="text" required name="nom">
+<label>LE NUMERO DE LA CARTE</label>
+<input type="text" required name="nombrecarte" placeholder="1111-2222-3333-1212">
+
+<button class="btn" type="submit">RESERVE</button>
+
+
+
+<div class="traiter">
+
+<?php
 
   
-        function filter($name){
+function filter($name){
 
-            $resultat=$_REQUEST[$name]?? "";
+    $resultat=$_REQUEST[$name]?? "";
 
 
-            return $resultat;
+    return $resultat;
 
-        }
+}
 
-        $tabAssoColonneValeur=[
+$tabAssoColonneValeur=[
 
-          "nom"         =>filter("nom"),
-          "prenom"      =>filter("prenom"),
-          "age"      =>filter("age"),
-          "visa"      =>filter("visa"),
-          "adresse"     =>filter("adresse"),
-          "telephon"        =>filter("telephon"),
-          "email"       =>filter("email"),
-          "note"     =>filter("note")
-        ];
-       
-        
+  "destination"  =>filter("destination"),
+  "date"         =>filter("date"),
+  "duree"       =>filter("duree"),
+  "ville"       =>filter("ville"),
+  "adulte"      =>filter("adulte"),
+  "enfant"      =>filter("enfant"),
+  "nom"         =>filter("nom"),
+  "nombrecarte" =>filter("nombrecarte")
+];
+
+
 extract($tabAssoColonneValeur);
 
 
 
 if     
-($nom!=""
-&&$prenom!=""
-&&$age!=""
-&&$visa!=""
-&&$adresse!=""
-&&$telephon!=""
-&&$email!=""
-&&$note!=""){
+($destination!=""
+&&$date!=""
+&&$duree!=""
+&&$ville!=""
+&&$adulte!=""
+&&$enfant!=""
+&&$nom!=""
+&&$nombrecarte!=""){
 
 
-    
+
 $requeteSQL=
+
 <<<code
+
 INSERT INTO reservation
-(nom,prenom,age,visa,adresse,telephon,email,note)
+
+(destination,date,duree,ville,adulte,enfant,nom,nombrecarte)
+
 VALUES
-(:nom,:prenom,:age,:visa,:adresse,:telephon,:email,:note)
+
+(:destination,:date,:duree,:ville,:adulte,:enfant,:nom,:nombrecarte)
+
 code;
 
 
 require_once "php/model/envoyer-sql.php";
 
 
-     echo "MERCI  $requeteSQL";
+echo "MERCI  $requeteSQL";
 }
 
-else
-
-{
-  echo "VEUILLEZ REMPLIR TOUS LES CHAMPS OBLIGATOIRES";
 
 
-}
+
+?>
+</div>
+
+</form>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

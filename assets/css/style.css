@@ -268,6 +268,16 @@ form > * {
     background-color: #ece9e9;
 }
 
+.btn{
+    
+background-color:white;
+color: #003644;
+padding:20px 12px;
+border-color :#00DEF2;
+border-radius:4px;
+cursor: pointer;font-size:23px;}
+
+
 .confirmation {
     margin: 6px 0px;
     padding: 10px;
@@ -302,6 +312,7 @@ form button:hover {
     box-shadow: 0 1px 2px 0 rgba(253,44,132,0.451), 0 1px 3px 1px rgba(253,44,132,0.302);
 }
 
+
 .password-input {
     margin: -6px 0px 2px -4px;
     padding: 10px;
@@ -317,3 +328,64 @@ form button:hover {
 
 
 
+.password-input {
+    margin: -6px 0px 2px -4px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 16px;
+    color: #666666;
+    border-radius: 8px;
+    border: 0px solid #b5b5b5;
+    background-color: #FFFFFF;
+    width: 262px;
+}
+
+
+
+
+ .reservation
+ 
+ {display:block;
+ margin-left: auto;
+margin-right: auto;
+width: 100%; 
+}
+
+.reservation input{
+    vertical-align: middle;
+    margin:5px 10px 5px 0;
+    padding:10px;
+    background-color:white;
+    border:1px solid #ddd;
+
+
+}
+
+.contact input{
+     vertical-align: middle;
+    margin:5px 10px 5px 0;
+    padding:10px;
+    background-color:white;
+    border:1px solid #ddd;
+    display:flex;
+   
+
+}
+.contact{display:block;
+    margin:auto;
+    padding:auto;
+    width: 100%;
+
+}
+
+.payment{
+display:inline;
+    
+font-size:30px;}
+
+
+.btn:hover{
+    
+background-color :#00DEF2;
+color:white;}

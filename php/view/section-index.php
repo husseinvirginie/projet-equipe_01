@@ -19,7 +19,7 @@
 
             // ETAPE 2 : JE ME CONNECTE A LA BASE, JE CONNECTE PHP A SQL
             $pdo = new PDO("mysql:host=localhost;dbname=ilesfantastiques;charset=utf8;", "root", "");
-            // ENVOYER LA REQUETE   
+            // ENVOYER LA REQUETE                     
             // https://www.php.net/manual/fr/pdo.query.php
             // ETAPE 2A : ON ENVOIE LA REQUETE PREPAREE
             // PDOStatement EST UN CONTAINER QUI ENGLOBE LES RESULTATS DE LA REQUETE SQL

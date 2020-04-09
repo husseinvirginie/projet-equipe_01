@@ -12,7 +12,7 @@
 
       <input  type="text" placeholder="PRENOM" required name="prenom"><br>
 
-      <input type="text" placeholder="ADRESSE" required name="adresse"><br>
+      <label><i class="fa fa-address-card-o"></i></label><input type="text" placeholder="ADRESSE" required name="adresse"><br>
 
       
         <select id="country" required name="pays" placeholder="PAYS">
@@ -24,7 +24,7 @@
       <option value="USA">USA</option>
     </select>
 
-      <input type="text" placeholder="Email"  required name="email"><br>
+    <label><i class="fa fa-envelope"></i></label>  <input type="text" placeholder="Email"  required name="email"><br>
 
       <textarea name="message" id=""  placeholder="MESSAGES" cols="30" rows="10"></textarea>
 
@@ -33,7 +33,7 @@
       
         <div>
 
-        
+      
 <?php
   
         function filter($name){
