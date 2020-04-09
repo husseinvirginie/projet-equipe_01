@@ -17,7 +17,7 @@
             <a href="index.php">Accueil</a>
             <a href="reservation.php">Réservation</a>
             <a href="contact.php">Contact</a>
-            
+           
        
         </nav>
         <div class="subpage-header">

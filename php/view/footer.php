@@ -17,7 +17,7 @@
             </p>
             <p>
                 +33 05 91 05 55 05<br>
-                <a href="contact.php"> contact@iles-fantastiques.com</a>
+                <a href="mailto:contact@iles-fantastiques.com" class="mail"> contact@iles-fantastiques.com</a>
 
             </p>
         </div>
