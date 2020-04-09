@@ -1,94 +1,83 @@
-<section class="contact">
-            <h2>Contact</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Repellat minus excepturi sed dolor, id quaerat. Recusand
-                ae doloribus esse maiores non pariatur provident
-                 voluptatem voluptates, totam eaque, iure nemo alias soluta!</p>
+<section>
+      <h2>Contact</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Repellat minus excepturi sed dolor, id quaerat. Recusand
+      ae doloribus esse maiores non pariatur provident
+      voluptatem voluptates, totam eaque, iure nemo alias soluta!</p>
 
-<form action="" method="POST" > 
+      <form action="" method="POST"> 
 
+      <input type="text" placeholder="Nom" required name="nom">
 
-      <input type="text" placeholder="NOM"  required name="nom"><br>
+      <input  type="text" placeholder="Prénom" required name="prenom">
 
-      <input  type="text" placeholder="PRENOM" required name="prenom"><br>
+      <input type="text" placeholder="Adresse" required name="adresse">
 
-      <label><i class="fa fa-address-card-o"></i></label><input type="text" placeholder="ADRESSE" required name="adresse"><br>
+      <select id="country" required name="pays" placeholder="Pays">
+      <option value="">Pays</option>
+      <option value="CANADA">Canada</option>
+      <option value="FRANCE">France</option>
+      <option value="AFRIQUE">Afrique</option>
+      <option value="ASIE">Asie</option>
+      <option value="USA">Usa</option>
+      </select>
 
-      
-        <select id="country" required name="pays" placeholder="PAYS">
-      <option value="">PAYS</option>
-      <option value="CANADA">CANADA</option>
-      <option value="FRANCE">FRANCE</option>
-      <option value="AFRIQUE">AFRIQUE</option>
-      <option value="ASIE">ASIE</option>
-      <option value="USA">USA</option>
-    </select>
+      <input type="text" placeholder="Email" required name="email">
 
-    <label><i class="fa fa-envelope"></i></label>  <input type="text" placeholder="Email"  required name="email"><br>
+      <textarea name="message" id="" placeholder="Message" required cols="30" rows="10"></textarea>
 
-      <textarea name="message" id=""  placeholder="MESSAGES" cols="30" rows="10"></textarea>
-
-
-      <button type="submit" class="btn">ENVOYER</button>
-      
-        <div>
-
-      
-<?php
-  
-        function filter($name){
-
-            $resultat=$_REQUEST[$name]?? "";
+      <button type="submit" class="btn">Envoyer</button>
 
 
-            return $resultat;
-
-        }
-
-        $tabAssoColonneValeur=[
-
-          "nom"         =>filter("nom"),
-          "prenom"      =>filter("prenom"),
-          "adresse"     =>filter("adresse"),
-          "pays"        =>filter("pays"),
-          "email"       =>filter("email"),
-          "message"     =>filter("message")
-        ];
-       
+      <div class="confirmation">
         
-extract($tabAssoColonneValeur);
-
-
-
-if     
-($nom!=""
-&&$prenom!=""
-&&$adresse!=""
-&&$pays!=""
-&&$email!=""
-&&$message!=""){
-
-
+        <?php
     
-$requeteSQL=
-<<<code
-INSERT INTO messages
-(nom,prenom,adresse,pays,email,message)
-VALUES
-(:nom,:prenom,:adresse,:pays,:email,:message)
-code;
+          function filter($name){
+
+              $resultat=$_REQUEST[$name]?? "";
+
+              return $resultat;
+
+          }
+
+          $tabAssoColonneValeur=[
+
+            "nom"         =>filter("nom"),
+            "prenom"      =>filter("prenom"),
+            "adresse"     =>filter("adresse"),
+            "pays"        =>filter("pays"),
+            "email"       =>filter("email"),
+            "message"     =>filter("message")
+          ];
+                
+          extract($tabAssoColonneValeur);
+
+          if     
+          ($nom!=""
+          &&$prenom!=""
+          &&$adresse!=""
+          &&$pays!=""
+          &&$email!=""
+          &&$message!=""){
 
 
-require_once "php/model/envoyer-sql.php";
+              
+          $requeteSQL=
+          <<<code
+          INSERT INTO messages
+          (nom,prenom,adresse,pays,email,message)
+          VALUES
+          (:nom,:prenom,:adresse,:pays,:email,:message)
+          code;
 
+          require_once "php/model/envoyer-sql.php";
 
-     echo "MERCI  $requeteSQL";
-}
+          echo "MERCI  $requeteSQL";
+          }
+      
+        ?>
+      </div>
 
-
-    
-?>
-</div>
-
-</form>
-        </section>
+      </form>
+</section>
