@@ -3,12 +3,12 @@
 
 function filtrer($name="id")
 {
-    $resultat=$_REQUEST[$name]??"";
+    $resultat=$_REQUEST[$name] ?? "";
     return $resultat;
 }
 $identifiantFormulaire = filtrer("identifiantFormulaire");
 
-// identifiant formualaire
+// identifiant formulaire
 
 if($identifiantFormulaire =="update"){
 // On récupère les informations envoyées par le naviguateur.
@@ -149,3 +149,46 @@ CODESQL;
 }
 
 // est ce que quelqu'un peut essayer!!
+
+
+$identifiantFormulaire = filtrer("identifiantFormulaire");
+
+// J'identifie le formulaire à supprimer
+
+if($identifiantFormulaire =="delete"){
+ 
+ $tabAssoColonneValeur = [
+        "id"            => filtrer("id"),
+        "image"         => filtrer("image"),
+        "description"   => filtrer("description"),
+        "lieu"          => filtrer("lieu"),
+        "pays"          => filtrer("pays"),
+        "categorie"     => filtrer("categorie"),
+        "saison"        => filtrer("saison"),
+        "prix"          => filtrer("prix"),
+    ];
+
+    extract($tabAssoColonneValeur);
+{
+        $requeteSQL =
+<<<CODESQL
+DELETE destinations
+SET
+        image=:image,
+        description=:description,
+        lieu=:lieu,
+        pays=:pays,
+        categorie=:categorie,
+        saison=:saison,
+        prix=:prix
+WHERE 
+id=:id;
+
+CODESQL;
+// on envoye la requete 
+        require_once "php/model/envoyer-sql.php";
+
+        echo "La destination a été suppriméé";
+    }
+    
+}
