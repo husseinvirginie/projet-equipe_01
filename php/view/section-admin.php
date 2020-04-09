@@ -35,7 +35,6 @@
     </form>
 </section>
 
-<<<<<<< HEAD
 
 <section >
     
@@ -53,31 +52,6 @@
             <input type="decimal" name="prix" required placeholder="prix">
             <input type="text" name="id" required placeholder="entrez l'id">
        
-=======
-<section>
-    <h3 class="soustitre-admin">Modifier la Destination</h3>
-
-
-
-    <form method="post" class="admin" id="update" action="">
-    
-    
-    <form id="update" class="admin" action="" method="post">
-    
-
-    <form method="post" class="admin" id="update" action="">
-        
-
-        <input type="text" name="image" required value="image">
-        <input type="text" name="lieu" required placeholder="lieu">
-        <input type="text" name="pays" required placeholder="pays">
-        <input type="text" name="categorie" required placeholder="categorie">
-        <input type="text" name="saison" required placeholder="saison">
-        <textarea name="description" cols="60" rows="8" required placeholder="description"></textarea>
-        <input type="decimal" name="prix" required placeholder="prix">
-        <input type="text" name="id" required placeholder="entrez l'id">
-
->>>>>>> 144bba2b02fbd65e13250a7386e81292c1d1cdb2
 
         <input type="hidden" name="identifiantFormulaire" value="update">
         <button type="submit">Modifier</button>
@@ -89,27 +63,18 @@
                 require "php/controller/form-articles.php";
             }
             ?>
-<<<<<<< HEAD
       
 
-=======
-        </div>
->>>>>>> 144bba2b02fbd65e13250a7386e81292c1d1cdb2
     </form>
 </section>
 
 <section>
 
-<<<<<<< HEAD
 <h2>Supprimer la publication</h2>
 
-=======
-    <h3 class="soustitre-admin">Supprimer la Destination</h3>
->>>>>>> 144bba2b02fbd65e13250a7386e81292c1d1cdb2
 
     <form method="post" class="admin" id="delete" action="">
 
-<<<<<<< HEAD
 <form method="post" class="admin" id="delete" action="">
 
 <input type="id" name="id" required placeholder = " Entrez l'id">
@@ -119,7 +84,7 @@
 <input type="text" name="categorie" required value = "catégorie">
 <input type="text" name="saison" required value = "saisons">
 <textarea name="description" cols="60" rows="8" required placeholder="description"></textarea>
-<input type="decimal" name="prix">
+<input type="decimal" name="prix" required placeholder="prix">
 
 <input type="hidden" name="identifiantFormulaire" value="delete">
 <Button type ="submit">supprimer</button>
@@ -142,27 +107,3 @@ require "php/controller/form-articles.php";
 </form>
 </section>
 
-=======
-        <input type="text" name="image" required value = "image">
-        <input type="text" name="lieu" required value = "lieu">
-        <input type="text" name="pays" required value = "pays">
-        <input type="text" name="categorie" required value = "categorie">
-        <input type="text" name="saison" required value = "saison">
-        <textarea name="description" cols="60" rows="8" required placeholder="description"></textarea>
-        <input type="decimal" name="prix" required placeholder="prix">
-
-        <input type="hidden" name="identifiantFormulaire" value="delete">
-        <Button type ="submit">Supprimer</button>
-
-        <!-- Debug console.log "Etes vous sur de vouloir supprimer ce fichier" -->
-        <div class="confirmation">
-            <?php
-            $identifiantFormulaire = $_REQUEST["identifiantFormulaire"]??"";
-            If ($identifiantFormulaire=="delete"){
-                require "php/controller/form_articles.php";
-            }
-            ?>
-        </div>
-    </form>
-</section>
->>>>>>> 144bba2b02fbd65e13250a7386e81292c1d1cdb2
