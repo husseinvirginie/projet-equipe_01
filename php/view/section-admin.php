@@ -8,7 +8,7 @@
     - description   text
     - prix          decimal(10,2)
     -->
-    <h2>admin</h2>
+    <h2>Admin</h2>
     <h3 class="soustitre-admin">Créer la Destination</h3>
 
     <form id="create" class="admin" action="" method="POST">
