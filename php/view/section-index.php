@@ -1,6 +1,6 @@
 
         <section>
-            <h2>Nos Exclusivités Voyages </h2>
+            <h2>Nos Exclusivités Voyages</h2>
             <div class="listeDestination">
             <?php
             
@@ -52,21 +52,21 @@
             // J'AFFICHE CHAQUE DESTINATION DANS MA PAGE
             echo
             <<<CODEHTML
-                            <div class="destination">
-                                <img class="image-destination" src="$image" alt="image">
-                                <h3>$lieu</h3>
-                                <h4>$pays</h4>
-                                <h5>$categorie</h5>
-                                <h6>$saison</h6>
-                                <p>$description</p>
-                                <div class="prix">$prix €</div>
-                                <a href="#" class="bouton">Réservez</a> 
-                            </div>
+                    <div class="destination">
+                        <img class="image-destination" src="$image" alt="image">
+                        <h3>$lieu</h3>
+                        <h4>$pays</h4>
+                        <h5>$categorie</h5>
+                        <h6>$saison</h6>
+                        <p>$description</p>
+                        <div class="prix">$prix €</div>
+                        <a href="reservation.php" class="bouton">Réserver</a> 
+                    </div>
             CODEHTML;
             }
 
-            // LES INFOS QUI NOUS INTERESSENT SONT DANS UNE TABLE SQL articles
-            // LA TABLE SQL A DES COLONNES titre, image, contenu, etc... 
+            // LES INFOS QUI NOUS INTERESSENT SONT DANS UNE TABLE SQL destinations
+            // LA TABLE SQL A DES COLONNES image, lieu, etc... 
             // ET LES INFOS SONT GROUPEES DANS UNE MEME LIGNE
 
             ?>

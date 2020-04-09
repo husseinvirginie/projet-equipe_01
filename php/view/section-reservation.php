@@ -1,8 +1,5 @@
-
-     
-
-        <section class="Réservation">
-            <h2>Réservation (COMING SOON)</h2>
+<section class="Réservation">
+            <h2>Réservation</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Repellat minus excepturi sed dolor, id quaerat. Recusand
                 ae doloribus esse maiores non pariatur provident
@@ -76,17 +73,11 @@ if
 
     
 $requeteSQL=
-
 <<<code
-
 INSERT INTO reservation
-
 (nom,prenom,age,visa,adresse,telephon,email,note)
-
 VALUES
-
 (:nom,:prenom,:age,:visa,:adresse,:telephon,:email,:note)
-
 code;
 
 
