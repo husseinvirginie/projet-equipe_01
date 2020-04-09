@@ -37,19 +37,14 @@
     </form>
 </section>
 
-<section>
+
+<section >
+    
     <h2> Modifier la publication</h2>
 
     <form method="post" class="admin" id="update" action="">
-        
-
-    <form id="update" class="admin" action="" method="post">
-      
-
-
-    <form method="post" class="admin" id="update" action="">
-      
-
+       
+    
             <input type="text" name="image" required value="image">
             <input type="text" name="lieu" required placeholder="lieu">
             <input type="text" name="pays" required placeholder="pays">
@@ -58,7 +53,7 @@
             <textarea name="description" cols="60" rows="8" required placeholder="description"></textarea>
             <input type="decimal" name="prix" required placeholder="prix">
             <input type="text" name="id" required placeholder="entrez l'id">
-     
+       
 
         <input type="hidden" name="identifiantFormulaire" value="update">
         <button type="submit"> Modifier </button>
@@ -84,10 +79,6 @@
 
 <form method="post" class="admin" id="delete" action="">
 
-
-   
-
-
 <input type="id" name="id" required placeholder = " Entrez l'id">
 <input type="text" name="image" required value = "image">
 <input type="text" name="lieu" required value = "lieu">
@@ -104,17 +95,17 @@
         <div class="confirmation">
         <?php
 $identifiantFormulaire = $_REQUEST["identifiantFormulaire"]??"";
-If ($identifiantFormulaire=="delete"){
+if ($identifiantFormulaire=="delete"){
 
 
 
-Require "php/controller/form-articles.php";
+require "php/controller/form-articles.php";
 
 }
-
 
     ?>
 </div>
 
 </form>
 </section>
+
