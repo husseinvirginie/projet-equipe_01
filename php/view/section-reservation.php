@@ -43,7 +43,6 @@
 
       <button class="btn" type="submit">Réserver</button>
 
-    <label><i class="fa fa-calendar" style="font-size:24px"></i> Date de depart*</label>
 
       <div class="confirmation">
 
