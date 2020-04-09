@@ -10,7 +10,7 @@
     - prix          decimal(10,2)
     -->
     <h1>admin</h1>
-    <h2> creer la publication</h2>
+    <h2>creer la publication</h2>
 
     <form id="create" class="admin" action="" method="POST">
         <input type="text" name="image" required value="assets/img/">
@@ -28,7 +28,7 @@
 
         <div class="confirmation">
             <?php
-            $identifiantFormulaire=$_REQUEST["identifiantFormulaire"]??"";
+            $identifiantFormulaire=$_REQUEST["identifiantFormulaire"] ?? "";
             if($identifiantFormulaire=="create"){
             require "php/controller/form-articles.php";
             }
@@ -39,16 +39,15 @@
 
 <section>
     <h2> Modifier la publication</h2>
-<<<<<<< HEAD
 
     <form method="post" class="admin" id="update" action="">
         <div class="Update">
-=======
+
     
 
-    <form id="update" class="admin" action="" method="post">
+    <form id="update" class="admin" action="" method="POST">
       
->>>>>>> 8a52407592e1dbdb7a21567255a6c0235fdb9645
+
             <input type="text" name="image" required value="image">
             <input type="text" name="lieu" required placeholder="lieu">
             <input type="text" name="pays" required placeholder="pays">
@@ -79,7 +78,7 @@
 
 <h2>Supprimer la publication</h2>
 
-<form method="post" class="admin" id="delete" action="">
+<form id ="delete" class="admin" action="" method="POST">
 
     <div class="delete">
 
@@ -87,7 +86,7 @@
 <input type="text" name="lieu" required value = "lieu">
 <input type="text" name="pays" required value = "pays">
 <input type="text" name="categorie" required value = "catégorie">
-<input type="text" name="saison" required value = "saisons">
+<input type="text" name="saison" required value = "saison">
 <textarea name="description" cols="60" rows="8" required placeholder="description"></textarea>
 <input type="decimal" name="prix">
 
@@ -98,8 +97,8 @@ Debug console.log «Etes vous sur de vouloir supprimer ce fichier »
         <div class="confirmation">
         <?php
 $identifiantFormulaire = $_REQUEST["identifiantFormulaire"]??"";
-If ($identifiantFormulaire=="delete"){
-{Require "php/controller/form_articles.php";}
+            if($identifiantFormulaire=="delete"){
+            Require "php/controller/form_articles.php";}
 
     ?>
 </div>
