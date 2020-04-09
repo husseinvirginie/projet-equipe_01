@@ -268,6 +268,7 @@ form > * {
     background-color: #ece9e9;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 .btn{
     
 background-color:white;
@@ -276,7 +277,7 @@ padding:20px 12px;
 border-color :#00DEF2;
 border-radius:4px;
 cursor: pointer;font-size:23px;}
-=======
+
 
 .confirmation {
     margin: 6px 0px;
@@ -312,6 +313,7 @@ form button:hover {
     box-shadow: 0 1px 2px 0 rgba(253,44,132,0.451), 0 1px 3px 1px rgba(253,44,132,0.302);
 }
 
+
 .password-input {
     margin: -6px 0px 2px -4px;
     padding: 10px;
@@ -326,7 +328,22 @@ form button:hover {
 }
 
 
->>>>>>> 656f48c385eedc9ed70f99372240a39d730dcb15
+
+.password-input {
+    margin: -6px 0px 2px -4px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 16px;
+    color: #666666;
+    border-radius: 8px;
+    border: 0px solid #b5b5b5;
+    background-color: #FFFFFF;
+    width: 262px;
+}
+
+
+
 
  .reservation
  
