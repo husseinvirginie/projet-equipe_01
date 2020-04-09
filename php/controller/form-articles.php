@@ -3,7 +3,7 @@
 
 function filtrer($name="id")
 {
-    $resultat=$_REQUEST[$name]??"";
+    $resultat=$_REQUEST[$name] ?? "";
     return $resultat;
 }
 $identifiantFormulaire = filtrer("identifiantFormulaire");
@@ -12,7 +12,7 @@ $identifiantFormulaire = filtrer("identifiantFormulaire");
 
 if($identifiantFormulaire =="update"){
 // On récupère les informations envoyées par le naviguateur.
-    $tabAssoColonneValeur = [
+ $tabAssoColonneValeur = [
         "id"            => filtrer("id"),
         "image"         => filtrer("image"),
         "description"   => filtrer("description"),

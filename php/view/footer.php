@@ -2,8 +2,11 @@
     
     <footer>
         <div class="bloc">
-            <a href="admin.php">Admin</a>
-            <p>Tous droits réservés Les 5 Fantastiques 2020&copy</p>
+            
+            <a href="admin.php" onclick="javascript:return validatePass()">Admin</a>
+            <input id="password" class="password-input" type="text" placeholder="Entrez le password et cliquez Admin" required/>
+
+            <p>Tous droits réservés Les 5 Fantastiques 2020 &copy</p>
         </div>
 
         <div class="bloc">

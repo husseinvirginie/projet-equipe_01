@@ -10,6 +10,8 @@ body {
     color: #666666;
 }
 
+/* ------------------- NAVIGATION ------------------- */
+
 .nav-container {
     background-color: #0081A2;  
     background-image: linear-gradient(90deg, #00DEF2, #0081A2);
@@ -45,6 +47,8 @@ body {
     float: left;
 }
 
+/* ------------------- SUB HEADER ------------------- */
+
 .subpage-header{
     background-color: #FFFFFF;
     background-image: url("../img/seaside-994605.jpg");
@@ -73,6 +77,8 @@ body {
     width: 540px; 
 }
 
+/* ------------------- MAIN ------------------- */
+
 main {
     padding: 40px 50px 50px 50px;
 }
@@ -89,6 +95,10 @@ h3 {
     font-size: 24px;
     line-height: 24px;
     margin-bottom: -14px;
+}
+
+.soustitre-admin {
+    margin-bottom: 30px; 
 }
 
 h4 {
@@ -121,28 +131,28 @@ h6 {
 
 .listeDestination {
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .listeDestination .destination{
-    width: calc(100% / 3 - 80px);
-    margin-right: 80px;
+    width: calc(100% / 3 - 3%);
     /* POUR CHOISIR L'ORDRE D'AFFICHAGE DES ELEMENTS */
     order: 10;
 }
     
 .destination.pension {
-    /* EXCEPTION : J'OUTREPASSE L'ORDRE DE LA REQUETE ET JE METS LES ARTICLES CATEGORIE pension
-    EN PRIORITAIRE DANS L'ORDRE D'AFFICHAGE */
+    /* EXCEPTION : J'OUTREPASSE L'ORDRE DE LA REQUETE ET JE METS LES 
+    ARTICLESCATEGORIE "pension" EN PRIORITAIRE DANS L'ORDRE D'AFFICHAGE */
     order: 1;
-    /* ET JE PEUX L'AGGRANDIR */
+    /* ET JE PEUX L'AGRANDIR */
     /* width: 60%; */
 }
 
 .destination img {
     width: 100%;
-    height: 270px;
+    /* height: 270px; */
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 5px;
@@ -163,47 +173,18 @@ h6 {
     background-color: #FD2C84;
     padding: 14px 20px;
     border-radius: 8px;
-    display: inline-block;
     float: right;
     margin-top: -36px;
+    margin-bottom: 40px;
 }
 
 .destination .bouton:hover {
-    background-color: #CA1C65;
-    background-image: linear-gradient(0deg, #FD2C84, #C1135C);
+    /* background-color: #CA1C65;
+    background-image: linear-gradient(0deg, #FD2C84, #C1135C); */
+    box-shadow: 0 1px 2px 0 rgba(253,44,132,0.451), 0 1px 3px 1px rgba(253,44,132,0.302);
 }
 
-form {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-}
-
-/* POUR SELECTIONNER TOUTES LES BALISES ENFANTS DIRECTS DE LA BALISE PARENTE FORM */
-form > * {
-    margin: 5px;
-    padding: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    color: #333;
-    border-radius: 5px;
-}
-
-.big-button {
-    margin: 15px 0px;
-    width: 100%;
-    height: 50px;
-    font-size: 20px;
-    color: #FFFFFF;
-    background-color: #4c4c4c;
-    border-radius: 8px;
-    border: 0px;
-    cursor: pointer;
-}
-
-.big-button:hover {
-    background-color: #666666;
-}
+/* ------------------- FOOOTER ------------------- */
 
 footer {
     color: #FFFFFF;
@@ -266,15 +247,146 @@ footer .mail:hover{
     color: #003644;
 }
 
-/* -------------------------------- */
+/* ------------------- FORMULAIRES ------------------- */
 
-form .infosUpdate {
-    display:flex;
-    width:100%;
+form {
+    display: flex;
+    width: 100%;
     flex-direction: column;
 }
 
-.infosUpdate > * {
-    margin:0.25rem;
-    padding:0.25rem;
+/* POUR SELECTIONNER TOUTES LES BALISES ENFANTS DIRECTS DE LA BALISE PARENTE FORM */
+form > * {
+    margin: 6px 0px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    color: #666666;
+    border-radius: 8px;
+    border: 1px solid #b5b5b5;
+    background-color: #ece9e9;
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
+.btn{
+    
+background-color:white;
+color: #003644;
+padding:20px 12px;
+border-color :#00DEF2;
+border-radius:4px;
+cursor: pointer;font-size:23px;}
+
+
+.confirmation {
+    margin: 6px 0px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    color: #666666;
+    border-radius: 8px;
+    border: 0px solid #b5b5b5;
+    background-color: #FFFFFF;
+}
+
+form button {
+    color: #FFFFFF;
+    font-size: 22px;
+    line-height: 22px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    background-color: #FD2C84;
+    padding: 20px 20px;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    cursor: pointer;
+}
+
+form button:hover {
+    /* background-color: #CA1C65;
+    background-image: linear-gradient(0deg, #FD2C84, #C1135C); */
+    box-shadow: 0 1px 2px 0 rgba(253,44,132,0.451), 0 1px 3px 1px rgba(253,44,132,0.302);
+}
+
+
+.password-input {
+    margin: -6px 0px 2px -4px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 16px;
+    color: #666666;
+    border-radius: 8px;
+    border: 0px solid #b5b5b5;
+    background-color: #FFFFFF;
+    width: 262px;
+}
+
+
+
+.password-input {
+    margin: -6px 0px 2px -4px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 16px;
+    color: #666666;
+    border-radius: 8px;
+    border: 0px solid #b5b5b5;
+    background-color: #FFFFFF;
+    width: 262px;
+}
+
+
+
+
+ .reservation
+ 
+ {display:block;
+ margin-left: auto;
+margin-right: auto;
+width: 100%; 
+}
+
+.reservation input{
+    vertical-align: middle;
+    margin:5px 10px 5px 0;
+    padding:10px;
+    background-color:white;
+    border:1px solid #ddd;
+
+
+}
+
+.contact input{
+     vertical-align: middle;
+    margin:5px 10px 5px 0;
+    padding:10px;
+    background-color:white;
+    border:1px solid #ddd;
+    display:flex;
+   
+
+}
+.contact{display:block;
+    margin:auto;
+    padding:auto;
+    width: 100%;
+
+}
+
+.payment{
+display:inline;
+    
+font-size:30px;}
+
+
+.btn:hover{
+    
+background-color :#00DEF2;
+color:white;}
