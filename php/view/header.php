@@ -17,12 +17,16 @@
             <a href="index.php">Accueil</a>
             <a href="reservation.php">Réservation</a>
             <a href="contact.php">Contact</a>
+            
        
         </nav>
         <div class="subpage-header">
         <h1>Les Iles Fantastiques</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
-        Lorem Ipsum has been the industry's standard dummy text ever.</p>
+        <p>Nous avons été créés en 2020. Nous sommes leader dans 
+            le monde du tourisme et des voyages.
+             Nous avons de nombreuses succursales et partenaires à travers le monde.
+              Notre choix de destinations ciblées fait que nous sommes les meilleurs .
+             Notre différence est le secret de notre succès</p>
         </div>
     </header>
 

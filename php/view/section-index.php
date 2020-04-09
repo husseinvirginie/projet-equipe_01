@@ -70,7 +70,3 @@
             // ET LES INFOS SONT GROUPEES DANS UNE MEME LIGNE
 
             ?>
-
-            </div>
-
-        </section>
