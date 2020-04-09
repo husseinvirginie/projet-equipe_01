@@ -14,3 +14,4 @@ $pdo = new PDO("mysql:host=localhost;dbname=ilesfantastiques;charset=utf8;", "ro
 $pdoStatement = $pdo-> prepare($requeteSQL);
 $pdoStatement ->execute($tabAssoColonneValeur);
 
+
