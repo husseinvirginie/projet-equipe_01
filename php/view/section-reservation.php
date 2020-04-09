@@ -1,106 +1,99 @@
-
-
-
-
-
-
-
-
 <section class="reservation">
 
-<form method="POST" action="">
+  <form method="POST" action="">
 
-<label><i class="fa fa-plane" style="font-size:24px"></i>Destination*</label>
+    <label><i class="fa fa-plane" style="font-size:24px"></i>Destination*</label>
 
-<input type="text" id="" required name="destination" placeholder="FRANCE">
-
-
-<label><i class="fa fa-calendar" style="font-size:24px"></i> Date de depart*</label>
+    <input type="text" id="" required name="destination" placeholder="FRANCE">
 
 
-<input type="text" id="" required name="date" placeholder="2000-02-23">
- 
-<label>Durée*</label>
-
-<input type="text"  required name="duree" placeholder="">
-
-<label> <i class="fa fa-institution"></i>ville de départ*</label>
-
-<input type="text" required name="ville" placeholder="NEW YORK">
-
-<label><i class="fa fa-user"></i>Nombre d'adulte*</label> 
-<input type="number" required name="adulte">
-
-<label><i class="fa fa-user"></i>Nombre d'enfant*</label>
-
-<input type="number" required name="enfant">
+    <label><i class="fa fa-calendar" style="font-size:24px"></i> Date de depart*</label>
 
 
+    <input type="text" id="" required name="date" placeholder="2000-02-23">
 
-<label>PAYMENT</label>
- <label>LE NOM SUR LA CARTE<div class="payment">
-  <i class="fa fa-cc-visa" style="color:navy;"></i>
-  <i class="fa fa-cc-amex" style="color:blue;"></i>
-  <i class="fa fa-cc-mastercard" style="color:red;"></i>
-  <i class="fa fa-cc-discover" style="color:orange;"></i>
-</div>
+    <label>Durée*</label>
 
-</label>
+    <input type="text" required name="duree" placeholder="">
 
-<input type="text" required name="nom">
-<label>LE NUMERO DE LA CARTE</label>
-<input type="text" required name="nombrecarte" placeholder="1111-2222-3333-1212">
+    <label> <i class="fa fa-institution"></i>ville de départ*</label>
 
-<button class="btn" type="submit">RESERVE</button>
+    <input type="text" required name="ville" placeholder="NEW YORK">
+
+    <label><i class="fa fa-user"></i>Nombre d'adulte*</label>
+    <input type="number" required name="adulte">
+
+    <label><i class="fa fa-user"></i>Nombre d'enfant*</label>
+
+    <input type="number" required name="enfant">
 
 
 
-<div class="traiter">
+    <label>PAYMENT</label>
+    <label>LE NOM SUR LA CARTE<div class="payment">
+        <i class="fa fa-cc-visa" style="color:navy;"></i>
+        <i class="fa fa-cc-amex" style="color:blue;"></i>
+        <i class="fa fa-cc-mastercard" style="color:red;"></i>
+        <i class="fa fa-cc-discover" style="color:orange;"></i>
+      </div>
 
-<?php
+    </label>
 
-  
-function filter($name){
+    <input type="text" required name="nom">
+    <label>LE NUMERO DE LA CARTE</label>
+    <input type="text" required name="nombrecarte" placeholder="1111-2222-3333-1212">
 
-    $resultat=$_REQUEST[$name]?? "";
-
-
-    return $resultat;
-
-}
-
-$tabAssoColonneValeur=[
-
-  "destination"  =>filter("destination"),
-  "date"         =>filter("date"),
-  "duree"       =>filter("duree"),
-  "ville"       =>filter("ville"),
-  "adulte"      =>filter("adulte"),
-  "enfant"      =>filter("enfant"),
-  "nom"         =>filter("nom"),
-  "nombrecarte" =>filter("nombrecarte")
-];
-
-
-extract($tabAssoColonneValeur);
+    <button class="btn" type="submit">RESERVE</button>
 
 
 
-if     
-($destination!=""
-&&$date!=""
-&&$duree!=""
-&&$ville!=""
-&&$adulte!=""
-&&$enfant!=""
-&&$nom!=""
-&&$nombrecarte!=""){
+    <div class="traiter">
+
+      <?php
+
+
+      function filter($name)
+      {
+
+        $resultat = $_REQUEST[$name] ?? "";
+
+
+        return $resultat;
+      }
+
+      $tabAssoColonneValeur = [
+
+        "destination"  => filter("destination"),
+        "date"         => filter("date"),
+        "duree"       => filter("duree"),
+        "ville"       => filter("ville"),
+        "adulte"      => filter("adulte"),
+        "enfant"      => filter("enfant"),
+        "nom"         => filter("nom"),
+        "nombrecarte" => filter("nombrecarte")
+      ];
+
+
+      extract($tabAssoColonneValeur);
 
 
 
-$requeteSQL=
+      if (
+        $destination != ""
+        && $date != ""
+        && $duree != ""
+        && $ville != ""
+        && $adulte != ""
+        && $enfant != ""
+        && $nom != ""
+        && $nombrecarte != ""
+      ) {
 
-<<<code
+
+
+        $requeteSQL =
+
+          <<<code
 
 INSERT INTO reservation
 
@@ -113,32 +106,17 @@ VALUES
 code;
 
 
-require_once "php/model/envoyer-sql.php";
+        require_once "php/model/envoyer-sql.php";
 
 
-echo "MERCI  $requeteSQL";
-}
+        echo "MERCI  $requeteSQL";
+      }
 
 
 
 
-?>
-</div>
+      ?>
+    </div>
 
-</form>
+  </form>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
