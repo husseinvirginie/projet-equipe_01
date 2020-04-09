@@ -83,6 +83,7 @@
 
         $requeteSQL=
 
+      
         <<<code
 
         INSERT INTO reservation
@@ -114,15 +115,3 @@
 
 
 
-
-        echo "MERCI  $requeteSQL";
-      }
-
-
-
-
-      ?>
-    </div>
-
-  </form>
-</section>
