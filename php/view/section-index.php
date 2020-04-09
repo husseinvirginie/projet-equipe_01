@@ -1,6 +1,6 @@
 
         <section>
-            <h2>Nos Exclusivités Voyages </h2>
+            <h2>Nos Exclusivités Voyages</h2>
             <div class="listeDestination">
             <?php
             
@@ -19,7 +19,7 @@
 
             // ETAPE 2 : JE ME CONNECTE A LA BASE, JE CONNECTE PHP A SQL
             $pdo = new PDO("mysql:host=localhost;dbname=ilesfantastiques;charset=utf8;", "root", "");
-            // ENVOYER LA REQUETE   
+            // ENVOYER LA REQUETE                     
             // https://www.php.net/manual/fr/pdo.query.php
             // ETAPE 2A : ON ENVOIE LA REQUETE PREPAREE
             // PDOStatement EST UN CONTAINER QUI ENGLOBE LES RESULTATS DE LA REQUETE SQL
@@ -52,25 +52,25 @@
             // J'AFFICHE CHAQUE DESTINATION DANS MA PAGE
             echo
             <<<CODEHTML
-                            <div class="destination">
-                                <img class="image-destination" src="$image" alt="image">
-                                <h3>$lieu</h3>
-                                <h4>$pays</h4>
-                                <h5>$categorie</h5>
-                                <h6>$saison</h6>
-                                <p>$description</p>
-                                <div class="prix">$prix €</div>
-                                <a href="#" class="bouton">Réservez</a> 
-                            </div>
+                    <div class="destination">
+                        <img class="image-destination" src="$image" alt="image">
+                        <h3>$lieu</h3>
+                        <h4>$pays</h4>
+                        <h5>$categorie</h5>
+                        <h6>$saison</h6>
+                        <p>$description</p>
+                        <div class="prix">$prix €</div>
+                        <a href="reservation.php" class="bouton">Réserver</a> 
+                    </div>
             CODEHTML;
             }
 
-            // LES INFOS QUI NOUS INTERESSENT SONT DANS UNE TABLE SQL articles
-            // LA TABLE SQL A DES COLONNES titre, image, contenu, etc... 
+            // LES INFOS QUI NOUS INTERESSENT SONT DANS UNE TABLE SQL destinations
+            // LA TABLE SQL A DES COLONNES image, lieu, etc... 
             // ET LES INFOS SONT GROUPEES DANS UNE MEME LIGNE
 
             ?>
 
             </div>
-        </section>
 
+        </section>

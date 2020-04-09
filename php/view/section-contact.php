@@ -1,6 +1,5 @@
-
-        <section class="contact">
-            <h2>Contact (COMING SOON)</h2>
+<section class="contact">
+            <h2>Contact</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Repellat minus excepturi sed dolor, id quaerat. Recusand
                 ae doloribus esse maiores non pariatur provident
@@ -13,7 +12,7 @@
 
       <input  type="text" placeholder="PRENOM" required name="prenom"><br>
 
-      <input type="text" placeholder="ADRESSE" required name="adresse"><br>
+      <label><i class="fa fa-address-card-o"></i></label><input type="text" placeholder="ADRESSE" required name="adresse"><br>
 
       
         <select id="country" required name="pays" placeholder="PAYS">
@@ -25,7 +24,7 @@
       <option value="USA">USA</option>
     </select>
 
-      <input type="text" placeholder="Email"  required name="email"><br>
+    <label><i class="fa fa-envelope"></i></label>  <input type="text" placeholder="Email"  required name="email"><br>
 
       <textarea name="message" id=""  placeholder="MESSAGES" cols="30" rows="10"></textarea>
 
@@ -34,7 +33,7 @@
       
         <div>
 
-        
+      
 <?php
   
         function filter($name){
@@ -72,17 +71,11 @@ if
 
     
 $requeteSQL=
-
 <<<code
-
 INSERT INTO messages
-
 (nom,prenom,adresse,pays,email,message)
-
 VALUES
-
 (:nom,:prenom,:adresse,:pays,:email,:message)
-
 code;
 
 
@@ -99,5 +92,3 @@ require_once "php/model/envoyer-sql.php";
 
 </form>
         </section>
-
-      
