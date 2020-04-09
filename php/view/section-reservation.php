@@ -81,48 +81,30 @@
         &&$nom!=""
         &&$nombrecarte!=""){
 
-        $requeteSQL=
+        
+  $requeteSQL=
 
-        <<<code
+<<<code
 
-        INSERT INTO reservation
+INSERT INTO reservation
 
-        (destination,date,duree,ville,adulte,enfant,nom,nombrecarte)
+(destination,date,duree,ville,adulte,enfant,nom,nombrecarte)
 
-        VALUES
+VALUES
 
-        (:destination,:date,:duree,:ville,:adulte,:enfant,:nom,:nombrecarte)
+(:destination,:date,:duree,:ville,:adulte,:enfant,:nom,:nombrecarte)
 
-        code;
+code;
 
-        require_once "php/model/envoyer-sql.php";
 
-        echo "MERCI  $requeteSQL";
-        }
+require_once "php/model/envoyer-sql.php";
+
+
+echo "MERCI  $requeteSQL";
+} 
 
         ?>
       </div>
 
       </form>
-</section>
-
-
-
-
-
-
-
-
-
-
-        echo "MERCI  $requeteSQL";
-      }
-
-
-
-
-      ?>
-    </div>
-
-  </form>
 </section>
