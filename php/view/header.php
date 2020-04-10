@@ -19,11 +19,8 @@
         </nav>
         <div class="subpage-header">
         <h1>Les Iles Fantastiques</h1>
-        <p>Nous avons été créés en 2020. Nous sommes leader dans 
-            le monde du tourisme et des voyages.
-             Nous avons de nombreuses succursales et partenaires à travers le monde.
-              Notre choix de destinations ciblées fait que nous sommes les meilleurs .
-             Notre différence est le secret de notre succès</p>
+        <p>Agence créée en 2020. Nous sommmes aujourd'hui leader dans le monde du voyage.<br>
+        Découvrez notre sélection d'Iles paradisiaques tout autour du globe.</p>
         </div>
     </header>
 
