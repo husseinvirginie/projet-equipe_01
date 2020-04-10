@@ -80,7 +80,7 @@ body {
 /* ------------------- MAIN ------------------- */
 
 main {
-    padding: 40px 50px 50px 50px;
+    padding: 40px 50px 15px 50px;
 }
 
 h2 {
@@ -184,7 +184,7 @@ h6 {
     box-shadow: 0 1px 2px 0 rgba(253,44,132,0.451), 0 1px 3px 1px rgba(253,44,132,0.302);
 }
 
-/* ------------------- FOOTER ------------------- */
+/* ------------------- FOOOTER ------------------- */
 
 footer {
     color: #FFFFFF;
@@ -268,30 +268,27 @@ form > * {
     background-color: #ece9e9;
 }
 
-form label {
-    margin: 12px 0px 1px 0px;
-    padding: 0px;
+.btn{
+    
+background-color:white;
+color: #003644;
+padding:20px 12px;
+border-color :#00DEF2;
+border-radius:4px;
+cursor: pointer;font-size:23px;}
+
+
+.confirmation {
+    margin: 6px 0px;
+    padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 16px;
     color: #666666;
     border-radius: 8px;
     border: 0px;
-    background-color: #FFFFFF;
+    background-color: inherit;
 }
-
-.titre-paiement {
-    color: #006D8C;
-    font-size: 24px;
-    line-height: 24px;
-    font-weight: 700;
-    margin: 25px 0px 0px 0px;
-}
-
-.payment {
-    display:inline;
-    font-size:30px;
-} 
 
 form button {
     color: #FFFFFF;
@@ -315,17 +312,20 @@ form button:hover {
     box-shadow: 0 1px 2px 0 rgba(253,44,132,0.451), 0 1px 3px 1px rgba(253,44,132,0.302);
 }
 
-.confirmation {
-    margin: 6px 0px;
+
+.password-input {
+    margin: -6px 0px 2px -4px;
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 16px;
     color: #666666;
     border-radius: 8px;
     border: 0px solid #b5b5b5;
-    background-color: #FFFFFF;
+    background-color: inherit;
 }
+
+
 
 .password-input {
     margin: -6px 0px 2px -4px;
@@ -339,3 +339,189 @@ form button:hover {
     background-color: #FFFFFF;
     width: 262px;
 }
+
+/* ------------------------------------------------ */
+
+/* MEDIA QUERIES */
+
+/* ------------------------------------------------ */
+
+@media screen and (max-width: 1024px) {
+
+    .subpage-header{
+        height: 571px;
+        text-align: left;
+        padding-left: 27%;
+    }
+
+    .subpage-header h1 {
+        font-size: 64px;
+        padding-top: 155px;
+        margin: 0px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .subpage-header{
+        height: 571px;
+        text-align: left;
+        padding-left: 27%;
+    }
+    
+    .subpage-header h1 {
+        font-size: 60px;
+        padding-top: 155px;
+        margin: 0px;
+    }
+
+    .subpage-header p {
+        color: #505D79;
+        font-size: 22px;
+        line-height: 26px;
+        width: 520px; 
+    }
+
+    .destination .bouton {
+        width: 130px;
+    }
+
+}
+
+@media screen and (max-width: 852px) {
+
+    .subpage-header{
+        height: 571px;
+        text-align: left;
+        padding-left: 26%;
+    }
+    
+    .subpage-header h1 {
+        font-size: 55px;
+        padding-top: 155px;
+        margin: 0px;
+    }
+
+    .destination .bouton {
+        width: 130px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .nav-container a{
+        padding: 5px;
+    }
+
+    .subpage-header{
+        height: 571px;
+        text-align: left;
+        padding-left: 24%;
+    }
+
+    .subpage-header h1 {
+        font-size: 50px;
+        padding-top: 155px;
+        margin: 0px;
+    }
+    
+    .subpage-header p {
+        color: #505D79;
+        font-size: 22px;
+        line-height: 26px;
+        width: 520px; 
+    }
+    
+    .listeDestination .destination{
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 0px;
+    }
+
+    .destination .bouton {
+        width: 200px;
+    }
+
+    footer .bloc {
+        width: 100%;
+        margin: 0px;
+    }
+
+    footer h1 {
+        margin-top: 15px;
+        margin-bottom: 22px;
+    }
+
+}
+
+@media screen and (max-width: 690px) {
+
+    .subpage-header{
+        height: 571px;
+        text-align: left;
+        padding-left: 10%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .subpage-header{
+        height: 571px;
+        text-align: left;
+        padding-left: 5%;
+    }
+
+}
+
+
+
+
+
+ .reservation
+ 
+ {display:block;
+ margin-left: auto;
+margin-right: auto;
+width: 100%; 
+}
+
+.reservation input{
+    vertical-align: middle;
+    margin:5px 10px 5px 0;
+    padding:10px;
+    background-color:white;
+    border:1px solid #ddd;
+
+
+}
+
+.contact input{
+     vertical-align: middle;
+    margin:5px 10px 5px 0;
+    padding:10px;
+    background-color:white;
+    border:1px solid #ddd;
+    display:flex;
+   
+
+}
+.contact{display:block;
+    margin:auto;
+    padding:auto;
+    width: 100%;
+
+}
+
+.payment{
+display:inline;
+    
+font-size:30px;}
+
+
+.btn:hover{
+    
+background-color :#00DEF2;
+color:white;}
