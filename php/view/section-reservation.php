@@ -105,8 +105,7 @@ echo "MERCI  $requeteSQL";
         ?>
       </div>
 
-      ?>
-    </div>
+  
 
   </form>
 </section>
