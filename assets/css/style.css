@@ -184,7 +184,7 @@ h6 {
     box-shadow: 0 1px 2px 0 rgba(253,44,132,0.451), 0 1px 3px 1px rgba(253,44,132,0.302);
 }
 
-/* ------------------- FOOTER ------------------- */
+/* ------------------- FOOOTER ------------------- */
 
 footer {
     color: #FFFFFF;
@@ -266,6 +266,7 @@ form > * {
     border-radius: 8px;
     border: 1px solid #b5b5b5;
     background-color: #ece9e9;
+    
 }
 
 form label {
@@ -288,9 +289,10 @@ form label {
     margin: 25px 0px 0px 0px;
 }
 
-.recherche {
-    margin-bottom: 30px;
-}
+.payment {
+    display:inline;
+    font-size:30px;
+} 
 
 .titre-recherche {
     color: #006D8C;
@@ -300,10 +302,9 @@ form label {
     margin: 25px 0px 12px 0px;
 }
 
-.payment {
-    display:inline;
-    font-size:30px;
-} 
+.recherche {
+    margin-bottom: 30px;
+}
 
 form button {
     color: #FFFFFF;
@@ -338,6 +339,7 @@ form button:hover {
     border: 0px solid #b5b5b5;
     background-color: inherit;
 }
+
 
 .password-input {
     margin: -6px 0px 2px -4px;
@@ -494,7 +496,3 @@ form button:hover {
     }
 
 }
-
-
-
-
