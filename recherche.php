@@ -12,7 +12,6 @@ $tabAssoColVal = [ "titre" => "%$recherche%" ];
 
 $requetePrepareeSQL =
 <<<CODESQL
-
 SELECT * FROM destinations
 WHERE
 description LIKE :titre
@@ -28,7 +27,6 @@ OR
 prix LIKE :titre
 OR
 image LIKE :titre
-
 CODESQL;
 $pdo = new PDO("mysql:host=localhost;dbname=ilesfantastiques;charset=utf8;", "root", "");
 
