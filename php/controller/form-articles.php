@@ -49,7 +49,6 @@ SET
         prix=:prix
 WHERE 
 id=:id;
-
 CODESQL;
 // on envoye la requete 
         require_once "php/model/envoyer-sql.php";
@@ -57,6 +56,26 @@ CODESQL;
         echo "La destination est modifiée";
     }
     
+}
+
+if($identifiantFormulaire == "delete")
+{
+    $tabAssoColonneValeur = [
+        "id"    => filtrer("id"),
+    ];
+extract($tabAssoColonneValeur);
+$id=intval($id);
+if($id>0){
+        $requeteSQL=
+<<<CODESQL
+DELETE FROM destinations
+WHERE id=:id
+CODESQL;
+
+    require_once "php/model/envoyer-sql.php";
+
+    echo"Votre article est supprimée";
+}
 }
 
 
@@ -76,8 +95,6 @@ if ($identifiantFormulaire == "create")
     $image           = $_REQUEST["image"];
     $datePublication = $_REQUEST["datePublication"];
     $categorie       = $_REQUEST["categorie"];
-
-
         // ON PASSE PAR UN TABLEAU SUPPLEMENTAIRE
     // OU ON VA DONNER LES VALEURS EXTERIEURES A MEMORISER
     // SIMPLIFICATION: JE PEUX ENLEVER LES :
@@ -123,12 +140,10 @@ if ($identifiantFormulaire == "create")
         // ON PREPARE LE CODE SQL ET PLUS TARD ON VA L'EXECUTER
         $requeteSQL   =
 <<<CODESQL
-
 INSERT INTO destinations
 ( image, description, lieu, pays, categorie, saison, prix)
 VALUES
 ( :image, :description, :lieu, :pays, :categorie, :saison, :prix) 
-
 CODESQL;
 
 
@@ -151,44 +166,3 @@ CODESQL;
 // est ce que quelqu'un peut essayer!!
 
 
-$identifiantFormulaire = filtrer("identifiantFormulaire");
-
-// J'identifie le formulaire à supprimer
-
-if($identifiantFormulaire =="delete"){
- 
- $tabAssoColonneValeur = [
-        "id"            => filtrer("id"),
-        "image"         => filtrer("image"),
-        "description"   => filtrer("description"),
-        "lieu"          => filtrer("lieu"),
-        "pays"          => filtrer("pays"),
-        "categorie"     => filtrer("categorie"),
-        "saison"        => filtrer("saison"),
-        "prix"          => filtrer("prix"),
-    ];
-
-    extract($tabAssoColonneValeur);
-{
-        $requeteSQL =
-<<<CODESQL
-DELETE destinations
-SET
-        image=:image,
-        description=:description,
-        lieu=:lieu,
-        pays=:pays,
-        categorie=:categorie,
-        saison=:saison,
-        prix=:prix
-WHERE 
-id=:id;
-
-CODESQL;
-// on envoye la requete 
-        require_once "php/model/envoyer-sql.php";
-
-        echo "La destination a été suppriméé";
-    }
-    
-}

@@ -8,7 +8,7 @@
     - description   text
     - prix          decimal(10,2)
     -->
-    <h2>admin</h2>
+    <h2>Admin</h2>
     <h3 class="soustitre-admin">Créer la Destination</h3>
 
     <form id="create" class="admin" action="" method="POST">
@@ -38,7 +38,7 @@
 <section>
     <h3 class="soustitre-admin">Modifier la Destination</h3>
     
-    <form id="update" class="admin" action="" method="post">
+    <form id="update" class="admin" action="" method="POST">
         
         <input type="text" name="image" required value="image">
         <input type="text" name="lieu" required placeholder="lieu">
@@ -68,16 +68,9 @@
 
     <h3 class="soustitre-admin">Supprimer la Destination</h3>
 
-    <form method="post" class="admin" id="delete" action="">
+    <form method="POST" id="delete" action="">
 
         <input type="text" name="id" required placeholder="entrez l'id">
-        <input type="text" name="image" required value = "image">
-        <input type="text" name="lieu" required value = "lieu">
-        <input type="text" name="pays" required value = "pays">
-        <input type="text" name="categorie" required value = "categorie">
-        <input type="text" name="saison" required value = "saison">
-        <textarea name="description" cols="60" rows="8" required placeholder="description"></textarea>
-        <input type="decimal" name="prix" required placeholder="prix">
 
         <input type="hidden" name="identifiantFormulaire" value="delete">
         <Button type ="submit">Supprimer</button>
@@ -86,7 +79,7 @@
         <div class="confirmation">
             <?php
             $identifiantFormulaire = $_REQUEST["identifiantFormulaire"]??"";
-            If ($identifiantFormulaire=="delete"){
+            if ($identifiantFormulaire=="delete"){
                 require "php/controller/form-articles.php";
             }
             ?>
