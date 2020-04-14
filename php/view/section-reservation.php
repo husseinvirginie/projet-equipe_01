@@ -81,9 +81,10 @@
         && $nombrecarte != ""
       ) {
 
+         
 
    
-
+        $requeteSQL=
 
 
         <<<code
