@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
 }
-
+ 
 body {
     margin: 0px;
     padding: 0px;
@@ -266,21 +266,12 @@ form > * {
     border-radius: 8px;
     border: 1px solid #b5b5b5;
     background-color: #ece9e9;
+    
 }
 
-.btn{
-    
-background-color:white;
-color: #003644;
-padding:20px 12px;
-border-color :#00DEF2;
-border-radius:4px;
-cursor: pointer;font-size:23px;}
-
-
-.confirmation {
-    margin: 6px 0px;
-    padding: 10px;
+form label {
+    margin: 12px 0px 1px 0px;
+    padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 16px;
@@ -288,6 +279,31 @@ cursor: pointer;font-size:23px;}
     border-radius: 8px;
     border: 0px;
     background-color: inherit;
+}
+
+.titre-paiement {
+    color: #006D8C;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    margin: 25px 0px 0px 0px;
+}
+
+.payment {
+    display:inline;
+    font-size:30px;
+} 
+
+.titre-recherche {
+    color: #006D8C;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    margin: 25px 0px 12px 0px;
+}
+
+.recherche {
+    margin-bottom: 30px;
 }
 
 form button {
@@ -312,19 +328,17 @@ form button:hover {
     box-shadow: 0 1px 2px 0 rgba(253,44,132,0.451), 0 1px 3px 1px rgba(253,44,132,0.302);
 }
 
-
-.password-input {
-    margin: -6px 0px 2px -4px;
+.confirmation {
+    margin: 6px 0px;
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 16px;
     color: #666666;
     border-radius: 8px;
     border: 0px solid #b5b5b5;
     background-color: inherit;
 }
-
 
 
 .password-input {
@@ -474,54 +488,11 @@ form button:hover {
         padding-left: 5%;
     }
 
-}
-
-
-
-
-
- .reservation
- 
- {display:block;
- margin-left: auto;
-margin-right: auto;
-width: 100%; 
-}
-
-.reservation input{
-    vertical-align: middle;
-    margin:5px 10px 5px 0;
-    padding:10px;
-    background-color:white;
-    border:1px solid #ddd;
-
+    .subpage-header p {
+        color: #505D79;
+        font-size: 22px;
+        line-height: 26px;
+        width: 80%; 
+    }
 
 }
-
-.contact input{
-     vertical-align: middle;
-    margin:5px 10px 5px 0;
-    padding:10px;
-    background-color:white;
-    border:1px solid #ddd;
-    display:flex;
-   
-
-}
-.contact{display:block;
-    margin:auto;
-    padding:auto;
-    width: 100%;
-
-}
-
-.payment{
-display:inline;
-    
-font-size:30px;}
-
-
-.btn:hover{
-    
-background-color :#00DEF2;
-color:white;}

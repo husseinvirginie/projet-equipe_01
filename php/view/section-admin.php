@@ -64,3 +64,25 @@
     </form>
 </section>
 
+<section>
+
+    <h3 class="soustitre-admin">Supprimer la Destination</h3>
+
+    <form method="POST" id="delete" action="">
+
+        <input type="text" name="id" required placeholder="entrez l'id">
+
+        <input type="hidden" name="identifiantFormulaire" value="delete">
+        <Button type ="submit">Supprimer</button>
+
+        <!-- Debug console.log "Etes vous sur de vouloir supprimer ce fichier" -->
+        <div class="confirmation">
+            <?php
+            $identifiantFormulaire = $_REQUEST["identifiantFormulaire"]??"";
+            if ($identifiantFormulaire=="delete"){
+                require "php/controller/form-articles.php";
+            }
+            ?>
+        </div>
+    </form>
+</section>
