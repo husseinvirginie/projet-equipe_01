@@ -81,9 +81,12 @@
         && $nombrecarte != ""
       ) {
 
+         
 
-        
+   
         $requeteSQL=
+
+
         <<<code
         INSERT INTO reservation
         (destination,date,duree,ville,adulte,enfant,nom,nombrecarte)
@@ -175,8 +178,13 @@
           `
       }
 
+
       });
+
+
+
 
       });
     </script>
 <section>
+
